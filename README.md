@@ -1,7 +1,6 @@
 # TP-GoodFood
 
-
-### Mandat initial du projet: **[TP-GF sur Google Drive](https://docs.google.com/document/d/1rMaFXWExQbA2jnA9h01AgQeByHDBtRkJ3OQrcsGDdp4/edit)**
+## Mandat initial du projet: **[TP-GF sur Google Drive](https://docs.google.com/document/d/1rMaFXWExQbA2jnA9h01AgQeByHDBtRkJ3OQrcsGDdp4/edit)**
 
 ---
 
