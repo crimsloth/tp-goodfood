@@ -1,9 +1,3 @@
-# TP-GoodFood
-
-## Mandat initial du projet: **[TP-GF sur Google Drive](https://docs.google.com/document/d/1rMaFXWExQbA2jnA9h01AgQeByHDBtRkJ3OQrcsGDdp4/edit)**
-
----
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
