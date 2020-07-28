@@ -1,4 +1,4 @@
-@use 'function';
-@use 'global';
-@use 'mixins';
-@use 'vars';
+@forward 'function';
+@forward 'global';
+@forward 'mixins';
+@forward 'vars';
