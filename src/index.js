@@ -10,4 +10,9 @@ class App extends React.Component{
         }
     }
 
+    <header />
+    <Router />
+    <footer />
+
+}
 ReactDOM.render(<App />, document.getElementById('root'))

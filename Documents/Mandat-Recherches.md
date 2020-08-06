@@ -52,3 +52,14 @@ Explication provenant du site original de Git expliquant les divers commandes po
 
 ---
 
+## #21 - Création du routeur et de la structure de dossier de base/minimum.
+
+- **COURS EN LIGNE (SCRIMBA)** - [React Router (16 Modules)](https://scrimba.com/p/pMvMNS4/ceMaEWAq)     
+*Vidéo publié le : Aug 18, 2017*   
+**visité le 2020 / 08 / 05**    
+Cours que j'utilisais déjà avant et je me suis apperçu qu'il y avait une section complète pour le router.
+
+- **ARTICLE** - [Learn React Router in 5 Minutes - A Beginner's Tutorial](https://www.freecodecamp.org/news/react-router-in-5-minutes/)   
+*Article publié le : Nov 11, 2019 par Bob Ziroll (Scrimba Teacher)*   
+**visité le 2020 / 08 / 05**       
+Je suis tombé sur cet article en cherchant plus d'informations sur les routeurs et j'ai vu que le prof de Scrimba qui enseigne le cours sur React que je suivais avant ce projet avait rédigé l'article.
