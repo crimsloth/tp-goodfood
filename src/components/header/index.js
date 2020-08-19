@@ -1,1 +1,12 @@
-<h1>Header</h1>
+import React from "react"
+import NavBar from "./navbar"
+
+function Header() {
+    return(
+        <div>
+            <NavBar/>
+        </div>
+    )
+}
+
+export default Header
