@@ -5,8 +5,8 @@ import marcheGoodfood from "../../../assets/img/menu/marche-goodfood.png"
 
 function NavBar() {    
     return (
-        <div>
-            <Link to="/"><img src={marcheGoodfood} alt="Goodfood" /></Link>
+        <div className="toolbar">
+            <Link to="/" className="toolbar__logo"><img src={marcheGoodfood} alt="Goodfood" /></Link>
             <Link to="/menu">au menu</Link>
             <Link to="/prix">prix</Link>
             <Link to="/blog">blog</Link>

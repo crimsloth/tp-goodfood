@@ -15,6 +15,7 @@ import Wow from "./pages/wow"
 
 import NavBar from "./components/header"
 
+
 function App() {    
     return (
         <div>
