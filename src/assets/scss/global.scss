@@ -1,2 +1,17 @@
-@use './utils';
-@use '/src/components/header/index.scss';
+@import './utils';
+
+// Seulement du code global sur des trucs un peu spécial
+// Il n'est pas supossé avoir énormement de trucs ici.
+
+body {
+  font-family: $font-base-family;
+  font-size: $font-base-size;
+  margin: 0;
+  padding: 0;
+}
+
+// Exemple (Change la couleur de background lorsque l'on selectionne du text)
+*::selection { 
+  background: rgb(131, 68, 9); 
+  color: white;
+}
