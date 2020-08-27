@@ -1,5 +1,75 @@
-.toolbar {
-    position: fixed;
+@import "../../../assets/scss/utils.scss";
+
+.navbar {
+    display: flex;
+    align-items: center;
     width: 100%;
     background: black;
+
+    &__logo {
+        display: inline-flex;
+        margin: 3px;
+    }
+
+    &__burger-menu {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
+        transition: 1s all; // Pour que tu puisse tester la transition
+
+        // Desktop
+        @include media($sm) {
+            display: none;
+        }
+
+        &--open {
+            transform: rotate(90deg); // Pour que tu puisse tester la transition LOL
+        }
+    }
+
+    &__burger-menu-lines {
+        color: white;
+        line-height: 0.5;
+    }
+
+    &__menu {
+        // display: none;
+        position: fixed;
+        top: 220px;
+        right: -280px;
+        background-color: white;
+        width: 280px;
+        transition: 1s all;
+
+        // Desktop
+        @include media($sm) {
+            display: block;
+            position: relative;
+            right: initial;
+            background-color: transparent;
+            width: auto;
+            transition: 0s all;
+        }
+
+        &--open {
+            right: 0px;
+        }
+    }
+
+    &__link {
+        transition: 1s all; // Pour que tu puisse tester la transition
+        color: red;
+        font-weight: 600;
+        display: flex;
+
+        &:hover {
+            color: blue;
+        }
+
+        // Desktop
+        @include media($sm) {
+            display: inline-flex;
+        }
+    }
 }
