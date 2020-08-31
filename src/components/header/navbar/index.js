@@ -6,6 +6,8 @@ import "./index.scss"
 
 // images
 import marcheGoodfood from "../../../assets/img/menu/marche-goodfood.png"
+
+
 class NavBar extends React.Component {
     constructor(props) {
         super(props);

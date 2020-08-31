@@ -2,13 +2,21 @@
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    padding: 5px 15px;
     background: black;
+   
 
     &__logo {
         display: inline-flex;
-        margin: 3px;
+        margin: 0;
+        max-width: 140px;
+
+        & img {
+            width: 100%;
+        }
     }
 
     &__burger-menu {
@@ -36,11 +44,11 @@
     &__menu {
         // display: none;
         position: fixed;
-        top: 220px;
         right: -280px;
         background-color: white;
         width: 280px;
-        transition: 1s all;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
 
         // Desktop
         @include media($sm) {
@@ -58,18 +66,26 @@
     }
 
     &__link {
-        transition: 1s all; // Pour que tu puisse tester la transition
-        color: red;
-        font-weight: 600;
-        display: flex;
+        transition: 0.5s all; // Pour que tu puisse tester la transition
+        font-family: Work Sans,sans-serif!important;
+        color:#70cacb!important;
+        font-weight: 500;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        display: flex;        
 
         &:hover {
-            color: blue;
+            color: red;
         }
 
         // Desktop
         @include media($sm) {
             display: inline-flex;
+        // @media (min-width: 768px)
         }
     }
 }
+
