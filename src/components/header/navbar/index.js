@@ -43,6 +43,11 @@ class NavBar extends React.Component {
                     {/* <Login /> */}
                 </div>
 
+                <div>
+                    <Link className="navbar__button" to="/login">Se connecter</Link>
+                    <Link className="navbar__button" to="/subscribe">S'inscrire</Link>
+                </div>
+
                 {/* Not visible in mobile (Add props to make difference) props will be add to a class to make different style like (display: none;)*/}
                 {/* <Login /> */}
             </div>

@@ -1,0 +1,50 @@
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  background-color: #124651;
+  letter-spacing: .5px;
+
+  &__pdg {
+    display: flex; 
+    margin: 0;
+    padding-left: 30%;
+  }
+
+  &__texte {
+    margin: 0;
+    color: white;
+  }
+
+  &__note {
+    color: white;
+  }
+
+  &__langue {
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: white;
+    letter-spacing: .2em;
+  }
+
+  &__francais {
+    margin: 0;
+    color: #1b6c6d;
+    text-decoration: none;
+  }
+
+  &__slash {
+    margin: 0;
+    color: #1b6c6d;
+  }
+
+  &__english {
+    margin: 0;
+    color: #71c1b4;
+    font-weight: 800;
+    text-decoration: none;
+  }
+}
