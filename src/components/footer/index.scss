@@ -1,5 +1,11 @@
 .footer {
-  &__title {
-    
-  }
+	background-color: #70cacb;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	margin-bottom: -15px;
+
+	&__title {
+	color: white;
+	// TODO: Importer la font "Salvo Bold"
+	}
 }

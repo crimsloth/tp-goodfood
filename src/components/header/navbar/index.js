@@ -22,13 +22,11 @@ class NavBar extends React.Component {
         return (
             <div className="navbar" >
                 <Link to="/" className="navbar__logo"><img src={marcheGoodfood} alt="Goodfood" /></Link>
-
                 <div className={"navbar__burger-menu " + (this.state.isBurgerMenuOpen ? "navbar__burger-menu--open" : "")} onClick={() => this.toogleMenu()}>
                     <div className="navbar__burger-menu-lines">___</div>
                     <div className="navbar__burger-menu-lines">___</div>
                     <div className="navbar__burger-menu-lines">___</div>
                 </div>
-
                 <div className={"navbar__menu " + (this.state.isBurgerMenuOpen ? "navbar__menu--open" : "")}>
                     <Link className="navbar__link" to="/menu">au menu</Link>
                     <Link className="navbar__link" to="/prix">prix</Link>
@@ -38,16 +36,13 @@ class NavBar extends React.Component {
                     <Link className="navbar__link" to="/cartes">cartes cadeaux</Link>
                     <Link className="navbar__link" to="dejeuner">déjeuner</Link>
                     <Link className="navbar__link" to="/wow">goodfood wow</Link>
-
                     {/* Not visible in desktop (Add props to make difference) props will be add to a class to make different style like (display: none;)*/}
                     {/* <Login /> */}
                 </div>
-
                 <div>
                     <Link className="navbar__button" to="/login">Se connecter</Link>
                     <Link className="navbar__button" to="/subscribe">S'inscrire</Link>
                 </div>
-
                 {/* Not visible in mobile (Add props to make difference) props will be add to a class to make different style like (display: none;)*/}
                 {/* <Login /> */}
             </div>

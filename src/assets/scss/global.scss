@@ -4,15 +4,16 @@
 // Il n'est pas supossé avoir énormement de trucs ici.
 
 body {
-  font-family: $font-base-family;
-  font-size: $font-base-size;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(100, 145, 150);
+	font-family: $font-base-family;
+	font-size: $font-base-size;
+	margin: 0;
+	padding: 0;
+	padding-top: 90px;
+	background-color: rgb(100, 145, 150);
 }
 
 // Exemple (Change la couleur de background lorsque l'on selectionne du text)
 *::selection { 
-  background: rgb(131, 68, 9); 
-  color: white;
+	background: #124651; 
+	color: white;
 }
