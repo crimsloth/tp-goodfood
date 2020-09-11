@@ -6,6 +6,7 @@ import "./index.scss"
 
 // images
 import marcheGoodfood from "../../../assets/img/menu/marche-goodfood.png"
+import goodfoodwow from "../../../assets/img/svg/wow.svg"
 
 
 class NavBar extends React.Component {
@@ -35,13 +36,13 @@ class NavBar extends React.Component {
                     <Link className="navbar__link" to="/anne-marie">anne-marie withenshaw</Link>
                     <Link className="navbar__link" to="/cartes">cartes cadeaux</Link>
                     <Link className="navbar__link" to="dejeuner">déjeuner</Link>
-                    <Link className="navbar__link" to="/wow">goodfood wow</Link>
+                    <Link className="navbar__link" to="/wow"><img src={goodfoodwow} alt="goodfood wow" /></Link>
                     {/* Not visible in desktop (Add props to make difference) props will be add to a class to make different style like (display: none;)*/}
                     {/* <Login /> */}
                 </div>
-                <div>
-                    <Link className="navbar__button" to="/login">Se connecter</Link>
-                    <Link className="navbar__button" to="/subscribe">S'inscrire</Link>
+                <div className="navbar__button">
+                    <Link className="navbar__login" to="/login">Se connecter</Link>
+                    <Link className="navbar__subscribe" to="/subscribe">S'inscrire</Link>
                 </div>
                 {/* Not visible in mobile (Add props to make difference) props will be add to a class to make different style like (display: none;)*/}
                 {/* <Login /> */}

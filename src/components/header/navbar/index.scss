@@ -4,10 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
     padding: 5px 15px;
     background: white;
-   
 
     &__logo {
         display: inline-flex;
@@ -43,17 +41,17 @@
 
     &__menu {
         // display: none;
-        position: fixed;
-        right: -280px;
         background-color: white;
-        width: 280px;
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
-        letter-spacing: .1em;
+		letter-spacing: .1em;
+		padding-left: 15px;
+		display: flex;
+		align-items: center;
+		flex-flow: wrap;
 
         // Desktop
         @include media($sm) {
-            display: block;
             position: relative;
             right: initial;
             background-color: transparent;
@@ -68,15 +66,13 @@
 
     &__link {
         transition: 0.5s all; // Pour que tu puisse tester la transition
-        font-family: Work Sans,sans-serif!important;
-        color:#70cacb!important;
+        font-family: Work Sans,sans-serif;
+        color:#70cacb;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 12px;
         text-transform: uppercase;
         text-decoration: none;
         padding: 10px;
-        position: relative;
-        display: flex;        
 
         &:hover {
             color: red;
@@ -86,7 +82,48 @@
         @include media($sm) {
             display: inline-flex;
         // @media (min-width: 768px)
-        }
-    }
+		}
+	}
+
+	&__button {
+		padding-left: 30px;
+	}
+	
+	&__login {
+		color: #70cacb;
+		background-color: transparent;
+		border-color: #70cacb;
+		padding: 11px 20px;
+		border-radius: 4px;
+		font-family: Harriet Text,sans-serif;
+		font-size: 16px;
+		line-height: 1;
+		margin: 0;
+		border-width: 1px;
+		border-style: solid;
+		text-decoration: none;
+		transition: all .4s ease;
+
+		&:hover {
+			background-color: #70cacb;
+			color: #fff;
+		}
+	}
+	
+	&__subscribe {
+		font-family: Harriet Text,sans-serif;
+		font-size: 16px;
+		line-height: 1!important;
+		margin: 0;
+		border-width: 1px;
+		border-style: solid;
+		margin-left: 15px;
+		color: #fff;
+		background-color: #ff634d;
+		border-color: #ff634d;
+		padding: 11px 20px;
+		border-radius: 4px;
+		text-decoration: none;
+	}
 }
 

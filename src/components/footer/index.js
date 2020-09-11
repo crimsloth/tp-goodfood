@@ -50,10 +50,10 @@ function Footer() {
 						</div>
 					</div>
 				</div>
+			</div>
 			<div className="footer__legal">
 				<p className="footer__copyright">Copyright © 2020 Goodfood.</p>
 				<Link className="footer__politique" to="/politique">Politique de confidentialité</Link>
-			</div>
 			</div>
 		</div>
 	)

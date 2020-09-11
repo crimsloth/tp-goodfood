@@ -3,6 +3,7 @@
 	padding-top: 30px;
 	padding-bottom: 50px;
 	display: flex;
+	flex-direction: column;
 
 	&__box {
 		padding: 0 10%;
@@ -67,17 +68,31 @@
 	&__facebook img {
 		height: 35px;
 		width: auto;
+		margin-left: 10px;
 	}
 	
 	&__instagram img {
 		height: 35px;
 		width: 35px;
+		margin-left: 10px;
 	}
 
 	&__legal {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 10px;
-		padding: 32px 15px 0px 15px;
+		padding-top: 32px;
+		padding: 0 10%;
+		color: #1f7b79;
+	}
+
+	&__copyright {
+		padding: 0 15px;
+		margin: 15px 0;
+	}
+
+	&__politique {
+		margin: 15px 0;
+		text-decoration: none;
+		color: #1f7b79;
 	}
 }
