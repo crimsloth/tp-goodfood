@@ -5,7 +5,12 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 5px 15px;
-    background: white;
+	background: white;
+	justify-content: space-between;
+
+	&__box{
+		display: flex;
+	}
 
     &__logo {
         display: inline-flex;
@@ -45,7 +50,7 @@
         -webkit-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
 		letter-spacing: .1em;
-		padding-left: 15px;
+		padding-left: 20px;
 		display: flex;
 		align-items: center;
 		flex-flow: wrap;
@@ -75,7 +80,8 @@
         padding: 10px;
 
         &:hover {
-            color: red;
+			color: red;
+			// TODO: À modifier pour la ligne dynamique
         }
 
         // Desktop
@@ -113,7 +119,7 @@
 	&__subscribe {
 		font-family: Harriet Text,sans-serif;
 		font-size: 16px;
-		line-height: 1!important;
+		line-height: 1;
 		margin: 0;
 		border-width: 1px;
 		border-style: solid;

@@ -1,15 +1,19 @@
 .topBar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
   background-color: #124651;
-  letter-spacing: .5px;
+  display: flex;
+
+  &__box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 6px 0;
+	padding-left: 10%;
+	letter-spacing: .5px;
+  }
 
   &__pdg {
     display: flex; 
     margin: 0;
-    padding-left: 25%;
   }
 
   &__texte {
@@ -27,7 +31,8 @@
     justify-content: space-between;
     padding: 0 15px;
     color: white;
-    letter-spacing: .2em;
+	letter-spacing: .2em;
+	align-items: center;
   }
 
   &__francais {

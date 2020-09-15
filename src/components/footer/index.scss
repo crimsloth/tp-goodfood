@@ -1,10 +1,14 @@
-.footer {
+.footer { 
 	background-color: #70cacb;
 	padding-top: 30px;
 	padding-bottom: 50px;
 	display: flex;
 	flex-direction: column;
-
+	
+	
+	// ? Comment center le footer??
+	
+	
 	&__box {
 		padding: 0 10%;
 		display: flex;

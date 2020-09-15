@@ -28,7 +28,6 @@ function App() {
         <div>
             <Header />
             {/* Pourquoi offer ici, car il ne scroll pas avec le menu et il est surement présent sur toutes les pages. Reste fermé avec un cookie (cookie à voir en dernier)(Sauvegarge une valeur même après le refresh ou être partie d'un page web) */}
-            {/* <Offer /> */}
             <Switch>
                 <Route exact path="/"><Home /></Route>
                 <Route path="/menu"><Menu /></Route>
