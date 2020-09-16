@@ -4,6 +4,9 @@ import { Link } from "react-router-dom"
 // Style
 import "./index.scss"
 
+
+// TODO: Setup le X pour fermer Offer.
+
 function Offer () {
     return (
 		<div className="offer">
