@@ -27,7 +27,7 @@
         cursor: pointer;
         margin-left: auto;
         margin-right: 10px;
-        transition: 1s all; // Pour que tu puisse tester la transition
+        transition: 1s all; // Pour tester la transition
 
         // Desktop
         @include media($sm) {
@@ -35,7 +35,7 @@
         }
 
         &--open {
-            transform: rotate(90deg); // Pour que tu puisse tester la transition LOL
+            transform: rotate(90deg); // Pour tester la transition
         }
     }
 
@@ -77,12 +77,27 @@
         font-size: 12px;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 10px;
+		padding: 10px;
+		position: relative;
 
         &:hover {
 			color: black;
-			// TODO: À modifier pour la ligne dynamique
-        }
+
+			&:before {
+				content: "";
+				box-sizing: inherit;
+				transition: all .3s cubic-bezier(.785,.135,.15,.86);
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%);
+				height: 2px;
+				width: 100%;
+			}
+			// TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
+			// * Dans before (voir code sur internet) avec le hover sur le a du before
+			// * Faire un point de 2px height positionné à 50% qui va inherit du box et transition -50% en prenant 100% du width.
+		}
 
         // Desktop
         @include media($sm) {
@@ -90,46 +105,15 @@
         // @media (min-width: 768px)
 		}
 	}
-
-	&__button {
-		padding-left: 30px;
-	}
-	
-	&__login {
-		color: #70cacb;
-		background-color: transparent;
-		border-color: #70cacb;
-		padding: 11px 20px;
-		border-radius: 4px;
-		font-family: Harriet Text,sans-serif;
-		font-size: 16px;
-		line-height: 1;
-		margin: 0;
-		border-width: 1px;
-		border-style: solid;
-		text-decoration: none;
-		transition: all .4s ease;
-
-		&:hover {
-			background-color: #70cacb;
-			color: #fff;
-		}
-	}
-	
-	&__subscribe {
-		font-family: Harriet Text,sans-serif;
-		font-size: 16px;
-		line-height: 1;
-		margin: 0;
-		border-width: 1px;
-		border-style: solid;
-		margin-left: 15px;
-		color: #fff;
-		background-color: #ff634d;
-		border-color: #ff634d;
-		padding: 11px 20px;
-		border-radius: 4px;
-		text-decoration: none;
-	}
 }
 
+.button {
+
+	&__vide {
+		cursor: pointer;
+	}
+	
+	&__plein {
+		cursor: pointer;
+	}
+}

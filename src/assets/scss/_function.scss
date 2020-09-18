@@ -8,6 +8,7 @@
 }
 
 // Calculate REM
+// * sert à la conversion des px en rem et etc (en enlevant px du code css)
 @function rem($size) {
 	$values: ();
 	@if type-of($size) == list {

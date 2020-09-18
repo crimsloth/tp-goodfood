@@ -2,7 +2,10 @@ import React from "react"
 
 function AnneMarie() {
     return (
-        <h1>Anne-Marie Withenshaw</h1>
+		<div className="container">
+			<h1>Anne-Marie Withenshaw</h1>
+			<h2>Sous-Titre</h2>
+		</div>
     )
 }
 

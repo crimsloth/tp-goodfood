@@ -2,7 +2,10 @@ import React from "react"
 
 function Login() {
     return (
-        <h1>Se connecter</h1>
+		<div className="container">
+			<h1>Se connecter</h1> 
+			<h2>Sous-Titre</h2>
+		</div>
     )
 }
 

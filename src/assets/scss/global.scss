@@ -3,6 +3,7 @@
 // Seulement du code global sur des trucs un peu spécial
 // Il n'est pas supossé avoir énormement de trucs ici.
 
+
 body {
 	font-family: $font-base-family;
 	font-size: $font-base-size;
@@ -15,4 +16,8 @@ body {
 *::selection { 
 	background: #124651; 
 	color: white;
+}
+
+.container {
+	min-height: 422px;
 }

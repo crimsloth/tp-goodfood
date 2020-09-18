@@ -10,26 +10,24 @@
 	padding: 10px 0;
 	letter-spacing: .5px;
 
-	&__content {
-	}
-
 	&__texte {
 		margin: 0;
 		color: white;
 		text-align: center;
 	}
+}
 
-	&__button {
-		display: inline;
+.button {
+
+	&__plein {
 		font-family: Salvo Sans;
 		font-size: 16px;
 		margin: 0;
-		margin-left: 15px;
 		color: #fff;
 		background-color: #ff634d;
 		border: 6px solid #ff634d;
 		padding: 7px 4px 7px 3px;
-		border-radius: 4px;
+		border-radius: 0px;
 		text-decoration: none;
 	}
 }

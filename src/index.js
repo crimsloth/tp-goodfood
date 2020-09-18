@@ -22,27 +22,12 @@ import Subscribe from "./pages/subscribe"
 // Components
 import Header from "./components/header"
 import Footer from "./components/footer"
+import Offer from "./components/offer"
 
 
-// ? Questions:
-// ? -------------------------------------------
-// ? Qualité du css en rapport avec BEM...?
-// ? Comment on fait le X de fermeture du Offer? (histoire de cookie? voir note de Gui plus bas)
-// ? repositionnement du francais / english en bas de la page avec media?
-// ? Importer les typos (salvo, work, harriet, etc.).
-// ? Questions sur le folder scss.
-// ? Comment center le footer + garder en bas de la page?
-// ? Explication sur les commentaires de login de navbar.js?
-// ? Comment faire les hover du navbar?
-// ? Comment faire que le accueil du footer remet en haut de la page? ( avec un #?)
-// ? Pour le home, je fais tout dans "page" ou je fais un folder home dans component et j'import le stock de la?
-
-
-// TODO: ------------------
-// TODO: Importer les typos.
-// TODO: Faire les hover du navbar.
-// TODO: Faire le main content.
-
+// Carousel
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 
 
@@ -50,9 +35,7 @@ function App() {
     return (
         <div>
             <Header />
-			{/* Pourquoi offer ici? Car il ne scroll pas avec le menu et il est surement présent sur toutes les pages. 
-			Reste fermé avec un cookie (cookie à voir en dernier)
-			(Sauvegarge une valeur même après le refresh ou être partie d'un page web) */}
+			<Offer />
             <Switch>
                 <Route exact path="/"><Home /></Route>
                 <Route path="/menu"><Menu /></Route>
@@ -72,3 +55,53 @@ function App() {
 }
 
 ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
+
+
+
+
+
+// TODO SECTION ----------------------------------------------------------
+
+// TODO: Importer les typos (salvo, work, harriet, etc.) dans le font.scss
+//* face-font avec css et parametrer les fonts.
+
+// TODO: Setup le langue component sur le site (3 spots).
+
+// TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
+
+// TODO: Faire le menu burger.
+// * voir transform-origin pour le point d'ancrage des barre qui morph
+
+// TODO: Faire le X qui va fermer Offer.
+//* le X va etre un button avec un onClick qui trigger un state qui display non le Offer (faire en class)
+
+// TODO SECTION ----------------------------------------------------------
+
+
+
+
+
+// ? Questions futur pour Mentors: ---------------------------------------
+
+
+// ? ---------------------------------------------------------------------
+
+
+
+
+
+// ! Besoin de révision --------------------------------------------------
+
+// ? Help pour CSS des hover du navbar...semble pas fonctionner
+
+// ? HALP pour le slider Carousel (Carousel)
+//* Voir après les cards qui seront fait
+
+// ? Aide pour le component de langue
+
+// ? Comment faire que le accueil du footer remet en haut de la page? ( avec un #?)
+//* avec un onClick={test ? scrollTop : () => {}}    
+//* window.scrollTo({ top: 0, behavior : 'smooth' });
+
+// ! Besoin de révision --------------------------------------------------
+

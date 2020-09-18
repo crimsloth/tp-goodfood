@@ -2,17 +2,13 @@
 	background-color: #70cacb;
 	padding-top: 30px;
 	padding-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-	
-	
-	// ? Comment center le footer??
-	
 	
 	&__box {
-		padding: 0 10%;
 		display: flex;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1200px;
+		width: 100%;
+		margin: auto;
 	}
 
 	&__list {
@@ -69,13 +65,7 @@
 		// TODO: importer Harriet
 	}
 
-	&__facebook img {
-		height: 35px;
-		width: auto;
-		margin-left: 10px;
-	}
-	
-	&__instagram img {
+	&__social {
 		height: 35px;
 		width: 35px;
 		margin-left: 10px;
@@ -83,10 +73,9 @@
 
 	&__legal {
 		display: flex;
-		flex-wrap: wrap;
-		padding-top: 32px;
-		padding: 0 10%;
-		color: #1f7b79;
+		max-width: 1200px;
+		width: 100%;
+		margin: auto;
 	}
 
 	&__copyright {
