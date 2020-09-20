@@ -1,4 +1,5 @@
 import React from 'react';
+import amazonBlendWholeBeans from "./../../assets/img/menu/dejeuner/amazon-blend-whole-beans.jpg" //* Solution temporaire pour afficher des images
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,32 +9,47 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
-	root: {
-		maxWidth: 345,
-	},
-	media: {
-		height: 140,
-	},
-});
+// Style 
+import "./index.scss"
 
-export default function MediaCard() {
-	const classes = useStyles();
+// const useStyles = makeStyles({
+// 	root: {
+// 		width: 500,
+// 	},
+// 	media: {
+// 		height: 328,
+// 	},
+// });
 
+//TODO: Mettre mes propres valeurs css.
+
+
+
+export default function MediaCard( props ) {
+	// const classes = useStyles();
+	
+	let type = props.type || "";
+	let title = props.title || "";
+	let image = props.image || "";
+	let content = props.content || "";
+
+	
+	// className={classes.root}
+	// className={classes.media}
 	return (
-		<Card className={classes.root}>
+		<Card className="CHANGE_ME">
 		<CardActionArea>
 			<CardMedia 
-				className={classes.media}
-				image="/static/images/cards/contemplative-reptile.jpg" 
-				title="Contemplative Reptile" 
+				className="CHANGE_ME"
+				image= {image}
+				title= {title}
 			/> {/* IMAGE */}
 			
 			<CardContent>
-				<Typography gutterBottom variant="h5" component="h2">Lizard</Typography> {/* TITLE */}
+				<Typography gutterBottom variant="h5" component="h2">{title}</Typography> {/* TITLE */}
 				<Typography variant="body2" color="textSecondary" component="p">
-					Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-					across all continents except Antarctica</Typography> {/* DESCRIPTION */}
+					{content}
+					</Typography> {/* CONTENT */}
 			</CardContent>
 		</CardActionArea>
 		

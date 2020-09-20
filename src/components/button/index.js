@@ -13,7 +13,8 @@ function Button(props) {
 		style = "button__plein"
 	}
 
-    return (
+	style += " " + props.className
+	return (
 		<Link className="link-button" to={props.to}>
 			<span className="button">
 				<button className={style}>{props.children}</button>

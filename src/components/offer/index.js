@@ -13,7 +13,7 @@ function Offer () {
     return (
 		<div className="offer">
 			<p className="offer__texte">3 repas GRATUITS avec votre première livraison et évitez la file d'épicerie! Nouveaux clients seulement.</p>
-			<Button to="/offre">Profiter de l'offre</Button>
+			<Button className="button__coinCarre" to="/offre">Profiter de l'offre</Button>
 		</div>
     )
 }

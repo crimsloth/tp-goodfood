@@ -32,26 +32,26 @@ import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 
 function App() {
-    return (
-        <div>
-            <Header />
+	return (
+		<div>
+			<Header />
 			<Offer />
-            <Switch>
-                <Route exact path="/"><Home /></Route>
-                <Route path="/menu"><Menu /></Route>
-                <Route path="/prix"><Prix /></Route>
-                <Route path="/blog"><Blog /></Route>
-                <Route path="/faq"><Faq /></Route>
-                <Route path="/anne-marie"><Anne /></Route>
-                <Route path="/cartes"><Cartes /></Route>
-                <Route path="/dejeuner"><Dejeuner /></Route>
-                <Route path="/wow"><Wow /></Route>
-                <Route path="/login"><Login /></Route>
-                <Route path="/subscribe"><Subscribe /></Route>
-            </Switch>
-            <Footer />
-        </div>
-    )
+			<Switch>
+				<Route exact path="/"><Home /></Route>
+				<Route path="/menu"><Menu /></Route>
+				<Route path="/prix"><Prix /></Route>
+				<Route path="/blog"><Blog /></Route>
+				<Route path="/faq"><Faq /></Route>
+				<Route path="/anne-marie"><Anne /></Route>
+				<Route path="/cartes"><Cartes /></Route>
+				<Route path="/dejeuner"><Dejeuner /></Route>
+				<Route path="/wow"><Wow /></Route>
+				<Route path="/login"><Login /></Route>
+				<Route path="/subscribe"><Subscribe /></Route>
+			</Switch>
+			<Footer />
+		</div>
+	)
 }
 
 ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
@@ -83,6 +83,7 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 // ? Questions futur pour Mentors: ---------------------------------------
 
+//* Aide pour carousel et map...(demander a Isaac)
 
 // ? ---------------------------------------------------------------------
 

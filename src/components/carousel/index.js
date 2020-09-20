@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Card from "../../components/card"
+import list from "../../assets/list"
+
+const { dejeuner } = { ...list } //TODO: Ajouter (  , souper) rendu là.
 
 function SampleNextArrow(props) {
 	const { className, style, onClick } = props;
@@ -7,16 +11,10 @@ function SampleNextArrow(props) {
 		<div
 			className={className}
 			style={{ ...style, display: "block", background: "red" }}
-			onClick={onClick} 
+			onClick={onClick}
 		/>
 	);
 }
-
-
-// ! Revoir la configuration du carousel ===================================================
-//? Import une image en objet et remplace green par elle?
-//? On gosse dans le css d'origine ou on guess un nouveau qui fit?
-// ! Revoir la configuration du carousel ===================================================
 
 
 function SamplePrevArrow(props) {
@@ -27,7 +25,7 @@ function SamplePrevArrow(props) {
 			style={{ ...style, display: "block", background: "green" }}
 			onClick={onClick}
 		/>
-	); 
+	);
 }
 
 export default class CustomArrows extends Component {
@@ -43,33 +41,21 @@ export default class CustomArrows extends Component {
 
 		return (
 			<div>
-				<h2>Custom Arrows</h2>
 				<Slider {...settings}>
-					<div>
-						<h3>1</h3>
-					</div>
-					
-					<div>
-						<h3>2</h3>
-					</div>
-					
-					<div>
-						<h3>3</h3>
-					</div>
-					
-					<div>
-						<h3>4</h3>
-					</div>
-					
-					<div>
-						<h3>5</h3>
-					</div>
-					
-					<div>
-						<h3>6</h3>
-					</div>
+					{dejeuner.map(dej => {
+						return <Card {...dej} type="dejeuner" />
+					})}
 				</Slider>
 			</div>
 		);
 	}
 }
+
+
+
+
+
+// ! Revoir la configuration du carousel ===================================================
+//? Import une image en objet et remplace green par elle?
+//? On gosse dans le css d'origine ou on guess un nouveau qui fit?
+// ! Revoir la configuration du carousel ===================================================
