@@ -9,17 +9,21 @@ import CCM1 from "../../assets/img/how-it-work/how-it-works-visual-1.png"
 import CCM2 from "../../assets/img/how-it-work/how-it-works-visual-2.png"
 import CCM3 from "../../assets/img/how-it-work/how-it-works-visual-3.png"
 import CCM4 from "../../assets/img/how-it-work/how-it-works-visual-4.jpg"
+import Slider1 from "../../assets/img/slider-section/slider-dinner-layer-1.png"
+import Slider2 from "../../assets/img/slider-section/slider-dinner-layer-2.png"
+import Slider3 from "../../assets/img/slider-section/slider-dinner-layer-3.png"
+import Slider4 from "../../assets/img/slider-section/slider-dinner-layer-4.png"
 
 //Style
 import "./index.scss"
 
 //? comment permettre le signe du Nº1? du <H1> de (home__slider-content)
 //? Svg Play du button de (home__comment content) semble pas fonctionner
-//? les images aussi semble cassés...
+//? comment superposer les image?
 
-
+//! INCAPABLE DE METTRE LA FKING TYPO!!
 //TODO: Rendu au carousel
-
+//TODO: fix les images de CCM
 
 function Home() {
 
@@ -27,13 +31,17 @@ function Home() {
 		<div className="container">
 			<div className="home">
 				<div className="home__slider">
+					<img className="home__slider-img1" src={Slider1} alt="slider1" data-animation="bounceInLeft" />
+					<img className="home__slider-img2" src={Slider2} alt="slider2" data-animation="bounceInUp" data-animation-exit="bounceOutDown" />
 					<div className="home__slider-content">
-						<h1>Le prêt-à-cuisiner Nº1 au Québec!</h1> 
-						<h3>Des ingrédients frais de la ferme pour cuisiner de délicieuses recettes, livrés gratuitement à votre porte.</h3>
-						<div className="homer__slider-button">
-							<Button>Débuter</Button>
+						<h1 className="home__slider-title">Le prêt-à-cuisiner Nº1 au Québec!</h1> 
+						<h3 className="home__slider-text">Des ingrédients frais de la ferme pour cuisiner de délicieuses recettes, livrés gratuitement à votre porte.</h3>
+						<div className="home__slider-button">
+							<Button className="debuter" to="/debuter">Débuter</Button>
 						</div>
 					</div>
+					<img className="home__slider-img3" src={Slider3} alt="slider3" data-animation="bounceInUp" data-animation-exit="bounceOutDown" />
+					<img className="home__slider-img4" src={Slider4} alt="slider4" data-animation="bounceInRight" />						
 				</div>
 				<div className="home__ccm">
 					<div className="home__ccm-content">

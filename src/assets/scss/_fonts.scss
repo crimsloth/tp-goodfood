@@ -1,17 +1,9 @@
-// @font-face {
-// 	font-family: 'Open Sans';
-// 	font-style: normal;
-// 	font-weight: 400;
-// 	src: url('../fonts/open-sans-v13-latin-regular.eot'); /* IE9 Compat Modes */
-// 	src: local('Open Sans'), local('OpenSans'),
-// 		 url('../fonts/open-sans-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-// }
-
-// //* Un exemple ===============================================================================================
-
-// @font-face {
+@font-face {
+	font-family: 'Work Sans';
+	font-weight: 700;
+	src: local('Work Sans'), url(../../fonts/Work_Sans/static/WorkSans-Italic.ttf), format('truetype');
 	
-// }
+}
 
 //*===============================================
 // font-family: Verdana,Geneva,sans-serif;
@@ -21,9 +13,6 @@
 // font-family: Salvo Sans,sans-serif;
 // font-weight: 700;
 
-// font-family: Work Sans,sans-serif
-// font-weight: 500;
-// font-weight: 700;
 
 
 
