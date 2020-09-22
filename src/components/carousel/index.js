@@ -3,30 +3,43 @@ import Slider from "react-slick";
 import Card from "../../components/card"
 import list from "../../assets/list"
 
-const { dejeuner } = { ...list } //TODO: Ajouter (  , souper) rendu là.
+// Style 
+import "./index.scss"
+
+const { dejeuner, souper } = { ...list } 
+
+//* FLECHES----------------------------------------------------
+//TODO: className = "slick-arrow"
+//TODO: opacite .75 -> 1
+//TODO: 
+//TODO: 
+
+
+
 
 function SampleNextArrow(props) {
 	const { className, style, onClick } = props;
 	return (
 		<div
 			className={className}
-			style={{ ...style, display: "block", background: "red" }}
+			style={{ ...style, display: "block" }}
 			onClick={onClick}
+			
 		/>
 	);
 }
-
 
 function SamplePrevArrow(props) {
 	const { className, style, onClick } = props;
 	return (
 		<div
 			className={className}
-			style={{ ...style, display: "block", background: "green" }}
+			style={{ ...style, display: "block" }}
 			onClick={onClick}
 		/>
 	);
 }
+//* -----------------------------------------------------------
 
 export default class CustomArrows extends Component {
 	render() {
@@ -40,14 +53,17 @@ export default class CustomArrows extends Component {
 		};
 
 		return (
-			<div>
+			<div> 
 				<Slider {...settings}>
 					{dejeuner.map(dej => {
 						return <Card {...dej} type="dejeuner" />
 					})}
-				</Slider>
-			</div>
-		);
+					{souper.map(soup => {
+						return <Card {...soup} type="souper" />
+					})}
+				</Slider> 
+			</div> // map des dejeuners et soupers
+		); 
 	}
 }
 

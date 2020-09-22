@@ -83,7 +83,8 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 // ? Questions futur pour Mentors: ---------------------------------------
 
-//* Aide pour carousel et map...(demander a Isaac)
+//? comment permettre le signe du Nº1? du <H1> de (home__slider-content)
+//? Svg Play du button de (home__comment content) semble pas fonctionner
 
 // ? ---------------------------------------------------------------------
 
