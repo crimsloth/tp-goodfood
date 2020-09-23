@@ -23,7 +23,8 @@ import "./index.scss"
 
 //! INCAPABLE DE METTRE LA FKING TYPO!!
 //TODO: Rendu au carousel
-//TODO: fix les images de CCM
+//TODO: fix les images de CCM pour les mettres egal
+//TODO: fix le container du play
 
 function Home() {
 
@@ -45,20 +46,22 @@ function Home() {
 				</div>
 				<div className="home__ccm">
 					<div className="home__ccm-content">
-						<h2 className="home__ccm-title">Comment ça marche</h2>
-						<Button vide>Regarder la vidéo{Play}</Button>
+						<div className="home__ccm-head">
+							<h2 className="home__ccm-title">Comment ça marche</h2>
+							<Button vide className="play"> <p>Regarder la vidéo</p> <img src={Play} alt="play" /> </Button>
+						</div>
 					</div>
 					<div className="home__ccm-fiches">
-						<CommentFiche className="homme__ccm-fiches-1" image={CCM1} title="Nous créons des recettes originales.">
+						<CommentFiche className="homme__ccm-fiches-card" image={CCM1} alt="fiche 1" title="Nous créons des recettes originales.">
 							Notre équipe culinaire utilise des ingrédients de qualité pour créer des menus uniques pour vos déjeuners, vos dîners et vos soupers!
 						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-2" image={CCM2} title="Vous choisissez vos préférences.">
+						<CommentFiche className="homme__ccm-fiches-card" image={CCM2} alt="fiche 2" title="Vous choisissez vos préférences.">
 							Choisissez parmi une variété de repas équilibrés et délicieux chaque semaine selon vos préférences.
 						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-3" image={CCM3} title="Nous livrons chaque semaine – gratuitement.">
+						<CommentFiche className="homme__ccm-fiches-card" image={CCM3} alt="fiche 3" title="Nous livrons chaque semaine – gratuitement.">
 							Vos ingrédients sont emballés dans nos paniers réfrigérés, pour qu’ils restent frais – même si vous n’êtes pas à la maison.
 						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-4" image={CCM4} title="Vous cuisinez des repas exceptionnels à la maison.">
+						<CommentFiche className="homme__ccm-fiches-card" image={CCM4} alt="fiche 4" title="Vous cuisinez des repas exceptionnels à la maison.">
 						Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.
 						</CommentFiche>
 					</div>

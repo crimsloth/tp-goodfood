@@ -13,10 +13,10 @@
 	$values: ();
 	@if type-of($size) == list {
 		@each $current in $size {
-		$values: append($values, remove-px($current) / 16 * 1rem);
+		$values: append($values, remove-px($current) / 12 * 1rem);
 		}
 	} @else {
-		$values: remove-px($size) / 16 * 1rem;
+		$values: remove-px($size) / 12 * 1rem;
 	}
 	@return $values;
 }
