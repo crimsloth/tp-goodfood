@@ -15,8 +15,6 @@ const { dejeuner, souper } = { ...list }
 //TODO: 
 
 
-
-
 function SampleNextArrow(props) {
 	const { className, style, onClick } = props;
 	return (
@@ -66,12 +64,3 @@ export default class CustomArrows extends Component {
 		); 
 	}
 }
-
-
-
-
-
-// ! Revoir la configuration du carousel ===================================================
-//? Import une image en objet et remplace green par elle?
-//? On gosse dans le css d'origine ou on guess un nouveau qui fit?
-// ! Revoir la configuration du carousel ===================================================

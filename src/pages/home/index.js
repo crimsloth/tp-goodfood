@@ -1,14 +1,14 @@
 import React from "react"
 import Carousel from "../../components/carousel"
 import Button from "../../components/button"
-import CommentFiche from "../../components/comment-ca-fiches"
+import CcmFiche from "../../components/ccm-fiches"
 
 //Image
 import Play from "../../assets/img/svg/play.svg"
 import CCM1 from "../../assets/img/how-it-work/how-it-works-visual-1.png"
 import CCM2 from "../../assets/img/how-it-work/how-it-works-visual-2.png"
 import CCM3 from "../../assets/img/how-it-work/how-it-works-visual-3.png"
-import CCM4 from "../../assets/img/how-it-work/how-it-works-visual-4.jpg"
+import CCM4 from "../../assets/img/how-it-work/how-it-works-visual-4.png"
 import Slider1 from "../../assets/img/slider-section/slider-dinner-layer-1.png"
 import Slider2 from "../../assets/img/slider-section/slider-dinner-layer-2.png"
 import Slider3 from "../../assets/img/slider-section/slider-dinner-layer-3.png"
@@ -17,14 +17,6 @@ import Slider4 from "../../assets/img/slider-section/slider-dinner-layer-4.png"
 //Style
 import "./index.scss"
 
-//? comment permettre le signe du Nº1? du <H1> de (home__slider-content)
-//? Svg Play du button de (home__comment content) semble pas fonctionner
-//? comment superposer les image?
-
-//! INCAPABLE DE METTRE LA FKING TYPO!!
-//TODO: Rendu au carousel
-//TODO: fix les images de CCM pour les mettres egal
-//TODO: fix le container du play
 
 function Home() {
 
@@ -52,18 +44,18 @@ function Home() {
 						</div>
 					</div>
 					<div className="home__ccm-fiches">
-						<CommentFiche className="homme__ccm-fiches-card" image={CCM1} alt="fiche 1" title="Nous créons des recettes originales.">
-							Notre équipe culinaire utilise des ingrédients de qualité pour créer des menus uniques pour vos déjeuners, vos dîners et vos soupers!
-						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-card" image={CCM2} alt="fiche 2" title="Vous choisissez vos préférences.">
-							Choisissez parmi une variété de repas équilibrés et délicieux chaque semaine selon vos préférences.
-						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-card" image={CCM3} alt="fiche 3" title="Nous livrons chaque semaine – gratuitement.">
-							Vos ingrédients sont emballés dans nos paniers réfrigérés, pour qu’ils restent frais – même si vous n’êtes pas à la maison.
-						</CommentFiche>
-						<CommentFiche className="homme__ccm-fiches-card" image={CCM4} alt="fiche 4" title="Vous cuisinez des repas exceptionnels à la maison.">
-						Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.
-						</CommentFiche>
+						<CcmFiche className="homme__ccm-fiches-card" image={CCM1} alt="fiche 1" title="Nous créons des recettes originales.">
+						<p>Notre équipe culinaire utilise des ingrédients de qualité pour créer des menus uniques pour vos déjeuners, vos dîners et vos soupers!</p>
+						</CcmFiche>
+						<CcmFiche className="homme__ccm-fiches-card" image={CCM2} alt="fiche 2" title="Vous choisissez vos préférences.">
+						<p>Choisissez parmi une variété de repas équilibrés et délicieux chaque semaine selon vos préférences.</p>
+						</CcmFiche>
+						<CcmFiche className="homme__ccm-fiches-card" image={CCM3} alt="fiche 3" title="Nous livrons chaque semaine – gratuitement.">
+						<p>Vos ingrédients sont emballés dans nos paniers réfrigérés, pour qu’ils restent frais – même si vous n’êtes pas à la maison.</p>
+						</CcmFiche>
+						<CcmFiche className="homme__ccm-fiches-card" className="fiche4" image={CCM4} alt="fiche 4" title="Vous cuisinez des repas exceptionnels à la maison.">
+						<p>Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.</p>
+						</CcmFiche>
 					</div>
 				</div>
 				<div className="home__carousel">

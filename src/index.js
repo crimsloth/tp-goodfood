@@ -60,50 +60,88 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 
 
-// TODO SECTION ----------------------------------------------------------
+// TODO SECTION ========================================================================================================
+
+//! ----------------------------------------------------|  GLOBAL  |----------------------------------------------------
 
 // TODO: Importer les typos (salvo, work, harriet, etc.) dans le font.scss
 //* face-font avec css et parametrer les fonts.
 
-// TODO: Setup le langue component sur le site (3 spots).
+//! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
+
+// TODO: Setup le langue component sur le site (3 spots)
+//? Voir Mentors pour le weight du css
 
 // TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
+//? Voir Mentors
 
 // TODO: Faire le menu burger.
 // * voir transform-origin pour le point d'ancrage des barre qui morph
 
+//! ----------------------------------------------------|   HOME   |----------------------------------------------------
+
 // TODO: Faire le X qui va fermer Offer.
 //* le X va etre un button avec un onClick qui trigger un state qui display non le Offer (faire en class)
 
-// TODO SECTION ----------------------------------------------------------
+//! ----------------------------------------------------|  FOOTER  |----------------------------------------------------
+
+// TODO ================================================================================================================
 
 
 
 
+//? ==================================================================================================================== 
+//? ============================================|  QUESTIONS POUR MENTORS  |============================================
+//? ==================================================================================================================== 
 
-// ? Questions futur pour Mentors: ---------------------------------------
+//! ----------------------------------------------------|  GLOBAL  |----------------------------------------------------
 
-//? comment permettre le signe du Nº1? du <H1> de (home__slider-content)
+//? Aide pour le weight du CSS (priorités)
+//* 
+
+//? Comment mettre la Typo
+//* 
+
+//? Branches GitKraken Spaghetti...
+//* 
+
+//! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
+
+//? Help pour CSS des hover du navbar...again
+//* 
+
+//! ----------------------------------------------------|   HOME   |----------------------------------------------------
+
+//? HALP pour le slider Carousel (Carousel)
+//* fix la fluidité du drag?
+//* Comment bien target le css?
+// Import une image en objet pour fleche et remplace green par elle?
+// On gosse dans le css d'origine ou on guess un nouveau qui fit?
+//* State pour les boutons dejeuner et souper? On cache ou autre?
+
+//? Comment permettre le signe du Nº1? du <H1> de (home__slider-content)
+//* 
+
 //? Svg Play du button de (home__comment content) semble pas fonctionner
+//* 
 
-// ? ---------------------------------------------------------------------
+//? Comment superposer les image et empecher de passer par dessus le navbar?
+//* 
 
+//? fix les images de CCM pour les mettres egal (4e weird)
+//* 
 
+//? fix le container "FLEX" du play
+//* 
 
+//? Goutières globales que je casse dans home?
+//*
 
+//! ----------------------------------------------------|  FOOTER  |----------------------------------------------------
 
-// ! Besoin de révision --------------------------------------------------
-
-// ? Help pour CSS des hover du navbar...semble pas fonctionner
-
-// ? HALP pour le slider Carousel (Carousel)
-//* Voir après les cards qui seront fait
-
-// ? Aide pour le component de langue
-
-// ? Comment faire que le accueil du footer remet en haut de la page? ( avec un #?)
+//? Comment faire que le accueil du footer remet en haut de la page? ( avec un #?)
 //* avec un onClick={test ? scrollTop : () => {}}    
 //* window.scrollTo({ top: 0, behavior : 'smooth' });
 
-// ! Besoin de révision --------------------------------------------------
-
+//? ====================================================================================================================
+//? ====================================================================================================================

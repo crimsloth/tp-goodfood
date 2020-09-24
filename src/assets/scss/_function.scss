@@ -16,7 +16,7 @@
 		$values: append($values, remove-px($current) / 12 * 1rem);
 		}
 	} @else {
-		$values: remove-px($size) / 12 * 1rem;
+		$values: remove-px($size) / 16 * 1rem;
 	}
 	@return $values;
 }

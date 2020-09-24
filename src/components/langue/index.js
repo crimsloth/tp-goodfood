@@ -1,10 +1,6 @@
+import { Link } from "react-router-dom"
 import React from "react"
 import "./index.scss"
-
-// components
-import Button from "../../button"
-
-
 
 // TODO: Setup les langues pour utiliser ce component plusieurs fois
 //* 1) dans le topbar en haut a droite
@@ -15,22 +11,21 @@ import Button from "../../button"
 
 
 
-// ! Revoir avec state ==============================================
-// ! CSS dans button ================================================
+// ! Revoir avec state 
+// ! CSS dans les links
 
-function Langue (props) {
+function Langue () {
 	
 	
 	return (
 		<div>
-            <nav className="button">
-				<Button fr  to="/fr">Français /</Button>
-				<Button en to="/en">English</Button>
+            <nav className="langue">
+				<Link className="langue__fr" to="/fr">Français</Link>
+				<p className="langue__slash">/</p>
+				<Link className="langue__en" to="/en">English</Link>
 			</nav>
 		</div>
     )
 }
 
 export default Langue
-
-// ! Revoir avec state ==============================================

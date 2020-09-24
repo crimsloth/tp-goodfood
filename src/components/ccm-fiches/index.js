@@ -1,6 +1,7 @@
 import React from "react"
+import "./index.scss"
 
-function CommentFiche (props) {
+function CcmFiche (props) {
 	return(
 		<div className="fiches">
 			<div className="fiches__image">
@@ -16,4 +17,4 @@ function CommentFiche (props) {
 	)
 }
 
-export default CommentFiche
+export default CcmFiche
