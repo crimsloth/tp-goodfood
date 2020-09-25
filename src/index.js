@@ -64,7 +64,7 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //! ----------------------------------------------------|  GLOBAL  |----------------------------------------------------
 
 // TODO: Importer les typos (salvo, work, harriet, etc.) dans le font.scss
-//* face-font avec css et parametrer les fonts.
+//* face-font avec css et parametrer les fonts. (done)
 
 //! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
 
@@ -96,13 +96,13 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //! ----------------------------------------------------|  GLOBAL  |----------------------------------------------------
 
 //? Aide pour le weight du CSS (priorités)
-//* 
+//* .navbar .navbar__exemple
 
 //? Comment mettre la Typo
-//* 
+//* voir scss de typo
 
 //? Branches GitKraken Spaghetti...
-//* 
+//* tutoriel fait avec t1gu1
 
 //! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
 
@@ -112,29 +112,31 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //! ----------------------------------------------------|   HOME   |----------------------------------------------------
 
 //? HALP pour le slider Carousel (Carousel)
-//* fix la fluidité du drag?
+
 //* Comment bien target le css?
 // Import une image en objet pour fleche et remplace green par elle?
-// On gosse dans le css d'origine ou on guess un nouveau qui fit?
+//TODO: voir le fichier
+
 //* State pour les boutons dejeuner et souper? On cache ou autre?
+//TODO: juste changer l'array
 
 //? Comment permettre le signe du Nº1? du <H1> de (home__slider-content)
-//* 
+//* importer la font (done)
 
 //? Svg Play du button de (home__comment content) semble pas fonctionner
-//* 
+//* rechercher une infinite loop, 
 
 //? Comment superposer les image et empecher de passer par dessus le navbar?
-//* 
+//* absolute / relative (done)
 
 //? fix les images de CCM pour les mettres egal (4e weird)
-//* 
+//* done
 
 //? fix le container "FLEX" du play
-//* 
+//* done
 
 //? Goutières globales que je casse dans home?
-//*
+//* on a toute cassé
 
 //! ----------------------------------------------------|  FOOTER  |----------------------------------------------------
 
@@ -148,3 +150,4 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //notes :
 
 // box-sizing: border-box permet de calculer le padding DANS le 100% du width et non l'ajouter apres
+// a ete ajouter au global

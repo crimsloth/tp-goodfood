@@ -1,5 +1,4 @@
 import React from "react"
-import Button from "../button"
 import "./index.scss"
 
 function Ccm(props) {

@@ -21,11 +21,10 @@ function SampleNextArrow(props) {
 		<div
 			className={className}
 			style={{ ...style, display: "block" }}
-			onClick={onClick}
-			
+			onClick={onClick}			
 		/>
 	);
-}
+} //TODO: override le style du before des fleches avec un background image (mettre un height et width, display block...)
 
 function SamplePrevArrow(props) {
 	const { className, style, onClick } = props;
@@ -48,7 +47,7 @@ export default class CustomArrows extends Component {
 			slidesToScroll: 1,
 			nextArrow: <SampleNextArrow />,
 			prevArrow: <SamplePrevArrow />
-		};
+		}; //TODO: modifier les sampleArrow avec mes images
 
 		return (
 			<div className="carousel"> 
