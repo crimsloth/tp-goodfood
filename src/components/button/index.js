@@ -7,7 +7,7 @@ import "./index.scss"
 function Button(props) {
 
 	let style = null;
-	if(props.vide) {
+	if (props.vide) {
 		style = "button__vide"
 	} else {
 		style = "button__plein"
@@ -15,12 +15,10 @@ function Button(props) {
 
 	style += " " + props.className
 	return (
-		<Link className="link-button" to={props.to}>
-			<span className="button">
-				<button className={style}>{props.children}</button>
-			</span>
+		<Link className={style + " link-button"} to={props.to}>
+			{props.children}
 		</Link>
-    )
+	)
 }
 
 export default Button
