@@ -1,7 +1,7 @@
 .topBar {
 	background-color: #124651;
 	display: flex;
-	margin: 0 -15px;
+	padding: 0 15px;
 
 	&__box {
 		width: 100%;
@@ -28,13 +28,15 @@
 	}
 
 	&__langue {
-		width: 160px;
 		display: flex;
 		justify-content: space-between;
 		padding: 0 15px;
 		color: white;
 		letter-spacing: .2em;
 		align-items: center;
+		position: absolute;
+		right: 0;
+		top: 6px;
 	}
 
 	&__francais {

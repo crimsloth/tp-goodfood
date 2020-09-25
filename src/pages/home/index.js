@@ -44,21 +44,21 @@ function Home() {
 						</div>
 					</div>
 					<div className="home__ccm-fiches">
-						<CcmFiche className="homme__ccm-fiches-card" image={CCM1} alt="fiche 1" title="Nous créons des recettes originales.">
-						<p>Notre équipe culinaire utilise des ingrédients de qualité pour créer des menus uniques pour vos déjeuners, vos dîners et vos soupers!</p>
+						<CcmFiche className="home__ccm-fiches-card" image={CCM1} alt="fiche 1" title="Nous créons des recettes originales.">
+							<p>Notre équipe culinaire utilise des ingrédients de qualité pour créer des menus uniques pour vos déjeuners, vos dîners et vos soupers!</p>
 						</CcmFiche>
-						<CcmFiche className="homme__ccm-fiches-card" image={CCM2} alt="fiche 2" title="Vous choisissez vos préférences.">
-						<p>Choisissez parmi une variété de repas équilibrés et délicieux chaque semaine selon vos préférences.</p>
+						<CcmFiche className="home__ccm-fiches-card" image={CCM2} alt="fiche 2" title="Vous choisissez vos préférences.">
+							<p>Choisissez parmi une variété de repas équilibrés et délicieux chaque semaine selon vos préférences.</p>
 						</CcmFiche>
-						<CcmFiche className="homme__ccm-fiches-card" image={CCM3} alt="fiche 3" title="Nous livrons chaque semaine – gratuitement.">
-						<p>Vos ingrédients sont emballés dans nos paniers réfrigérés, pour qu’ils restent frais – même si vous n’êtes pas à la maison.</p>
+						<CcmFiche className="home__ccm-fiches-card" image={CCM3} alt="fiche 3" title="Nous livrons chaque semaine – gratuitement.">
+							<p>Vos ingrédients sont emballés dans nos paniers réfrigérés, pour qu’ils restent frais – même si vous n’êtes pas à la maison.</p>
 						</CcmFiche>
-						<CcmFiche className="homme__ccm-fiches-card" className="fiche4" image={CCM4} alt="fiche 4" title="Vous cuisinez des repas exceptionnels à la maison.">
-						<p>Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.</p>
+						<CcmFiche className="home__ccm-fiches-card" image={CCM4} alt="fiche 4" title="Vous cuisinez des repas exceptionnels à la maison.">
+							<p>Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.</p>
 						</CcmFiche>
 					</div>
 				</div>
-				<div className="home__carousel">
+				<div className="home__carousel"> 
 					<Carousel />
 				</div>
 			</div>

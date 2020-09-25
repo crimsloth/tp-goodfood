@@ -9,11 +9,6 @@ body {
 	font-size: $font-base-size;
 	margin: 0;
 	padding: 0;
-	// background-color: rgb(100, 145, 150);
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 // Exemple (Change la couleur de background lorsque l'on selectionne du text)
@@ -25,4 +20,8 @@ body {
 .container {
 	min-height: 422px;
 	
+}
+
+* {
+	box-sizing: border-box;
 }

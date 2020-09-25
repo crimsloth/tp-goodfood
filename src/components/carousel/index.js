@@ -51,7 +51,7 @@ export default class CustomArrows extends Component {
 		};
 
 		return (
-			<div> 
+			<div className="carousel"> 
 				<Slider {...settings}>
 					{dejeuner.map(dej => {
 						return <Card {...dej} type="dejeuner" />

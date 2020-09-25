@@ -24,7 +24,6 @@ import Header from "./components/header"
 import Footer from "./components/footer"
 import Offer from "./components/offer"
 
-
 // Carousel
 import "../node_modules/slick-carousel/slick/slick.css";
 import "../node_modules/slick-carousel/slick/slick-theme.css";
@@ -145,3 +144,7 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 //? ====================================================================================================================
 //? ====================================================================================================================
+
+//notes :
+
+// box-sizing: border-box permet de calculer le padding DANS le 100% du width et non l'ajouter apres
