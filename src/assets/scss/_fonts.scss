@@ -1,14 +1,50 @@
+
+//* ========================================| Work Sans |========================================
+
 @font-face {
 	font-family: 'Work Sans';
-	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Italic.ttf), format('truetype');
-	
+	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Regular.ttf);
 }
 
-//*===============================================
-// font-family: Verdana,Geneva,sans-serif;
+@font-face {
+	font-family: 'Work Sans';
+	font-style: italic;
+	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Italic.ttf);
+}
 
-// font-family: Salvo Sans Black,sans-serif;
+@font-face {
+	font-family: 'Work Sans';
+	font-weight: bold;
+	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Bold.ttf);
+}
 
-// font-family: Salvo Sans,sans-serif;
+@font-face {
+	font-family: 'Work Sans';
+	font-weight: 700;
+	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Black.ttf);
+} //TODO: a verifier selon le style
 
-//*===============================================
+
+//* ========================================| Salvo Sans |========================================
+
+@font-face {
+	font-family: 'Salvo Sans';
+	src: local('Salvo Sans'), url(../fonts/SalvoSansRegular.woff);
+}
+
+@font-face {
+	font-family: 'Salvo Sans';
+	font-weight: 300;
+	src: local('Salvo Sans'), url(../fonts/SalvoSansLight.woff);
+}
+
+@font-face {
+	font-family: 'Salvo Sans';
+	font-weight: 700;
+	src: local('Salvo Sans'), url(../fonts/SalvoSansBlack.woff);
+}
+
+
+//* ========================================| Autre |========================================
+
+
