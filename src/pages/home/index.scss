@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 		position: relative;
 	}
 
+	&__slider-title {
+		font-family: 'Work Sans';
+	}
+
 	&__slider-content {
 		width: 100%;
 		margin: auto;
@@ -26,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 		max-width: 35%;
 	}
 	&__slider-content h1, &__slider-content h3 {
-		font-family: Work Sans, sans-serif;
+		font-family: 'Work Sans';
 		color: white;
 		margin-top: 20px;
 		margin-bottom: 10px;
