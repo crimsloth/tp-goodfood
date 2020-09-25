@@ -1,0 +1,55 @@
+.ccm {
+	padding: 20px 30px;
+	text-align: center;
+	overflow-x: hidden;
+
+	&__head {
+
+		& h2 {
+			text-transform: uppercase;
+			color: #0b4652;
+			font-size: 30px;
+			font-weight: 800;
+			font-family: Salvo Sans Black,sans-serif;
+			letter-spacing: .5px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__fiches {
+		display: flex;
+		padding-right: 15px;
+		padding-left: 15px;
+
+		& img {
+			max-width: 88%;
+			border-radius: 50%;
+			padding: 20px;
+			vertical-align: middle;
+			border: 0;
+		}
+
+		& h4 {
+			font-family: Salvo Sans Black,sans-serif;
+			color: #0b4652;
+			font-size: 18px;
+			margin: 10px 0;
+			font-weight: 800;
+			line-height: 1.1;
+		}
+	}
+
+	&__fiche {
+		text-align: center;
+		width: 100%;
+
+		&__fiche-images {
+			max-width: 100%;
+			border-radius: 50%;
+			padding: 20px;
+			vertical-align: middle;
+			border: 0;
+		}
+	}
+}

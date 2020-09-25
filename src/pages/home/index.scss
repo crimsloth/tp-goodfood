@@ -90,48 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 	}
 
-	&__ccm {
-		padding: 20px 30px;
-		text-align: center;
-		overflow-x: hidden;
-	}
-
-	&__ccm-head {
-
-		& h2 {
-			text-transform: uppercase;
-			color: #0b4652;
-			font-size: 30px;
-			font-weight: 800;
-			font-family: Salvo Sans Black,sans-serif;
-			letter-spacing: .5px;
-			margin-top: 20px;
-			margin-bottom: 10px;
-		}
-	}
-
-	&__ccm-fiches {
-		display: flex;
-		padding-right: 15px;
-		padding-left: 15px;
-
-		& img {
-			max-width: 88%;
-			border-radius: 50%;
-			padding: 20px;
-			vertical-align: middle;
-			border: 0;
-		}
-
-		& h4 {
-			font-family: Salvo Sans Black,sans-serif;
-			color: #0b4652;
-			font-size: 18px;
-			margin: 10px 0;
-			font-weight: 800;
-			line-height: 1.1;
-		}
-	}
+	
 
 	&__carousel {
 		width: 100%;
@@ -160,19 +119,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 //! a revoir avec un SENSEI==========================
-.play {
+.home__play {
 	display: flex; 
 	justify-content: center;
 	align-items: center;
 	background: transparent;
-    border-radius: 10px;
-    color: #0b4652;
-    font-family: Salvo Sans,sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    border: 2px solid #0b4652;
+	border-radius: 10px;
+	color: #0b4652;
+	font-family: Salvo Sans,sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	border: 2px solid #0b4652;
 	padding: 7.5px 7.5px 7.5px 17.5px;
-	margin: 0;
+	max-width: 230px;
+	margin: auto;
 	//! a revoir avec un SENSEI========================
 	
 

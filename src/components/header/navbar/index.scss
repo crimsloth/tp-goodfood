@@ -105,16 +105,11 @@
             display: inline-flex;
         // @media (min-width: 768px)
 		}
-	}
-}
-
-.button {
-
-	&__vide {
-		cursor: pointer;
-	}
-	
-	&__plein {
-		cursor: pointer;
-	}
+    }
+    
+    .link-button {
+        display: inline-flex;
+        margin-left: 15px;
+        cursor: pointer;
+    }
 }
