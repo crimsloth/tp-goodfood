@@ -1,0 +1,92 @@
+.footer { 
+	background-color: #70cacb;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding: 0 15px;
+	
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1200px;
+		width: 100%;
+		margin: auto;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__list h5 {
+		padding: 0 15px;
+	}
+
+	&__title {
+		font-size: 15px;
+		letter-spacing: .1em;
+		line-height: 1.1;
+		font-family: Salvo Sans Black;
+		font-style: normal;
+		font-weight: 400;
+		margin: 10px 0px;
+		width: 100%;
+		color: white;
+	// TODO: Importer la font "Salvo Bold"
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		padding: 0 15px;
+		max-width: 200px;
+	}
+
+	&__link {
+		font-size: 1.3rem;
+		font-family: Harriet Text;
+		font-style: normal;
+		font-weight: 500;
+		text-decoration: none;
+		transition: all .3s ease-in-out;
+		color: #fff;		
+		line-height: 1.5em;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__questions {
+		text-align: right;
+	}
+
+	&__contact p {
+		color: #fff;
+		font-family: Harriet Text,sans-serif;
+		font-size: 2em;
+		margin: 0 0 10px;
+		// TODO: importer Harriet
+	}
+
+	&__social {
+		height: 35px;
+		width: 35px;
+		margin-left: 10px;
+	}
+
+	&__legal {
+		display: flex;
+		max-width: 1200px;
+		width: 100%;
+		margin: auto;
+	}
+
+	&__copyright {
+		padding: 0 15px;
+		margin: 15px 0;
+	}
+
+	&__politique {
+		margin: 15px 0;
+		text-decoration: none;
+		color: #1f7b79;
+	}
+}

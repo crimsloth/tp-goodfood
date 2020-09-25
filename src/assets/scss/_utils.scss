@@ -1,3 +1,6 @@
-@forward 'function';
-@forward 'mixins';
-@forward 'vars';
+@import 'function';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+// @import "~bootstrap/scss/bootstrap";
+

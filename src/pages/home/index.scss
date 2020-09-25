@@ -1,3 +1,189 @@
-h1 {
-    color: red;
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+.home {
+
+	&__slider {
+		width: 100%;
+		height: 100%;
+		background:rgb(136, 207, 207);
+		background-image: url(../../assets/img/slider-section/slider-texture-bg.png);
+		background-size: cover;
+		min-height: 400px;
+		display: flex;
+		overflow: hidden;
+		position: relative;
+	}
+
+	&__slider-content {
+		width: 100%;
+		margin: auto;
+		padding: 25px;
+		text-align: center;
+		max-width: 35%;
+	}
+	&__slider-content h1, &__slider-content h3 {
+		font-family: Work Sans, sans-serif;
+		color: white;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-shadow: 1px 1px 1px #969696;
+	}
+
+	&__slider-content h1 {
+		font-size: 3.7em;
+		font-weight: 700;
+	}
+	&__slider-content h3 {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	
+
+	&__comment-ca-marche {
+		padding: 20px 30px;
+		text-align: center;
+	}
+
+	&__comment-title {
+		text-transform: uppercase;
+		color: #0b4652;
+		font-size: 3rem;
+		font-family: Salvo Sans Black,sans-serif;
+		letter-spacing: .5px;
+	}
+
+	&__slider-img1 {
+		width: 273px;
+		height: 400px;
+		left: 5%;
+		bottom: -10%;
+		max-height: 100%;
+		z-index: 2;
+		position: absolute;
+	}
+	&__slider-img2 {
+		width: 275px;
+		height: 320px;
+		left: 15%;
+		bottom: -25%;
+		max-height: 80%;
+		position: absolute;
+	}
+	&__slider-img3 {
+		width: 361px;
+		height: 360px;
+		right: 12.5%;
+		bottom: -20%;
+		max-height: 90%;
+		position: absolute;
+	}
+	&__slider-img4 {
+		width: 223px;
+		height: 320px;
+		right: -30px;
+		top: 10%;
+		max-height: 80%;
+		position: absolute;
+	}
+
+	&__ccm {
+		padding: 20px 30px;
+		text-align: center;
+		overflow-x: hidden;
+	}
+
+	&__ccm-head {
+
+		& h2 {
+			text-transform: uppercase;
+			color: #0b4652;
+			font-size: 30px;
+			font-weight: 800;
+			font-family: Salvo Sans Black,sans-serif;
+			letter-spacing: .5px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__ccm-fiches {
+		display: flex;
+		padding-right: 15px;
+		padding-left: 15px;
+
+		& img {
+			max-width: 88%;
+			border-radius: 50%;
+			padding: 20px;
+			vertical-align: middle;
+			border: 0;
+		}
+
+		& h4 {
+			font-family: Salvo Sans Black,sans-serif;
+			color: #0b4652;
+			font-size: 18px;
+			margin: 10px 0;
+			font-weight: 800;
+			line-height: 1.1;
+		}
+	}
+
+	&__carousel {
+		width: 100%;
+		padding: 40px;
+	}
+
+}
+
+.debuter {
+	font-family: Work Sans,sans-serif;
+	background: #ee8659;
+	display: block;
+	font-weight: 600;
+    border-radius: 7px;
+    border-color: transparent;
+	width: 65%;
+	font-size: 20px;
+	margin: 10px auto;
+	padding: 10px 15px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+	transition: all .5s ease-in-out;
+
+	&:hover {
+		background: #1f7b79
+	}
+}
+
+//! a revoir avec un SENSEI==========================
+.play {
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+    border-radius: 10px;
+    color: #0b4652;
+    font-family: Salvo Sans,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #0b4652;
+	padding: 7.5px 7.5px 7.5px 17.5px;
+	margin: 0;
+	//! a revoir avec un SENSEI========================
+	
+
+	& p {
+		margin: 0;
+	}
+
+	& img {
+		margin-top: -3px;
+		margin-bottom: -3px;
+		transition: all .5s ease-in-out;
+		transform: scale(.7);
+	}
 }

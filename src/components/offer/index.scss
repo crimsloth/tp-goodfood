@@ -1,0 +1,32 @@
+.offer {
+	font-family: Salvo Sans;
+	font-size: 1.4em;
+	font-weight: 700;
+	background-color: #70cacb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;
+	letter-spacing: .5px;
+
+	&__texte {
+		margin: 0;
+		color: white;
+		text-align: center;
+	}
+}
+
+.button {
+
+	&__coinCarre {
+		font-family: Salvo Sans;
+		font-size: 16px;
+		margin: 0;
+		color: #fff;
+		background-color: #ff634d;
+		border: 6px solid #ff634d;
+		padding: 7px 4px 7px 3px;
+		border-radius: 0px;
+		text-decoration: none;
+	}
+}

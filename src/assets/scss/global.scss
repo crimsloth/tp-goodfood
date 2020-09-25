@@ -1,1 +1,27 @@
-@use 'utils';
+@import './utils';
+
+// Seulement du code global sur des trucs un peu spécial
+// Il n'est pas supossé avoir énormement de trucs ici.
+
+
+body {
+	font-family: $font-base-family;
+	font-size: $font-base-size;
+	margin: 0;
+	padding: 0;
+}
+
+// Exemple (Change la couleur de background lorsque l'on selectionne du text)
+*::selection { 
+	background: #124651; 
+	color: white;
+}
+
+.container {
+	min-height: 422px;
+	
+}
+
+* {
+	box-sizing: border-box;
+}

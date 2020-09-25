@@ -1,0 +1,120 @@
+@import "../../../assets/scss/utils.scss";
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	padding: 5px 15px;
+	padding: 0 15px;
+	background: white;
+	justify-content: space-between;
+
+	&__box{
+		display: flex;
+	}
+
+    &__logo {
+        display: inline-flex;
+        margin: 0;
+        max-width: 140px;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__burger-menu {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
+        transition: 1s all; // Pour tester la transition
+
+        // Desktop
+        @include media($sm) {
+            display: none;
+        }
+
+        &--open {
+            transform: rotate(90deg); // Pour tester la transition
+        }
+    }
+
+    &__burger-menu-lines {
+        color: white;
+        line-height: 0.5;
+    }
+
+    &__menu {
+        // display: none;
+        background-color: white;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+		letter-spacing: .1em;
+		padding-left: 20px;
+		display: flex;
+		align-items: center;
+		flex-flow: wrap;
+
+        // Desktop
+        @include media($sm) {
+            position: relative;
+            right: initial;
+            background-color: transparent;
+            width: auto;
+            transition: 0s all;
+        }
+
+        &--open {
+            right: 0px;
+        }
+    }
+
+    &__link {
+        transition: 0.5s all; // Pour que tu puisse tester la transition
+        font-family: Work Sans,sans-serif;
+        color:#70cacb;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+		padding: 10px;
+		position: relative;
+
+        &:hover {
+			color: black;
+
+			&:before {
+				content: "";
+				box-sizing: inherit;
+				transition: all .3s cubic-bezier(.785,.135,.15,.86);
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%);
+				height: 2px;
+				width: 100%;
+			}
+			// TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
+			// * Dans before (voir code sur internet) avec le hover sur le a du before
+			// * Faire un point de 2px height positionné à 50% qui va inherit du box et transition -50% en prenant 100% du width.
+		}
+
+        // Desktop
+        @include media($sm) {
+            display: inline-flex;
+        // @media (min-width: 768px)
+		}
+	}
+}
+
+.button {
+
+	&__vide {
+		cursor: pointer;
+	}
+	
+	&__plein {
+		cursor: pointer;
+	}
+}
