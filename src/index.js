@@ -56,7 +56,7 @@ function App() {
 ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 
-
+//! test *******
 
 
 // TODO SECTION ========================================================================================================
@@ -65,11 +65,14 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 // TODO: Importer les typos (salvo, work, harriet, etc.) dans le font.scss
 //* face-font avec css et parametrer les fonts. (done)
+//! faire certain que toutes les fonts sont là et opérationnel 
+
+// TODO: Ajuster le weight dans tout le site en utilisant la manière expliqué en demo
 
 //! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
 
 // TODO: Setup le langue component sur le site (3 spots)
-//? Voir Mentors pour le weight du css
+//* avec les medias
 
 // TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
 //? Voir Mentors
