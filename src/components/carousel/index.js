@@ -50,16 +50,16 @@ export default class CustomArrows extends Component {
 		}; //TODO: modifier les sampleArrow avec mes images
 
 		return (
-			<div className="carousel"> 
-				<Slider {...settings}>
+			<div className="carousel">
+				<Slider className="carousel__content" {...settings}>
 					{dejeuner.map(dej => {
 						return <Card {...dej} type="dejeuner" />
 					})}
 					{souper.map(soup => {
 						return <Card {...soup} type="souper" />
 					})}
-				</Slider> 
-			</div> // map des dejeuners et soupers
+				</Slider>
+			</div> // ma des dejeuners et soupers
 		); 
 	}
 }

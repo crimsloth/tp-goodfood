@@ -56,7 +56,9 @@ function App() {
 ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 
-//! test *******
+
+
+
 
 
 // TODO SECTION ========================================================================================================
@@ -84,6 +86,9 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 // TODO: Faire le X qui va fermer Offer.
 //* le X va etre un button avec un onClick qui trigger un state qui display non le Offer (faire en class)
+
+// TODO: Gerer le min-height du carousel (voir fichier)
+//! rendu là (1er octobre 2020)
 
 //! ----------------------------------------------------|  FOOTER  |----------------------------------------------------
 

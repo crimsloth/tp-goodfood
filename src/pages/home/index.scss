@@ -93,6 +93,7 @@
 	&__carousel {
 		width: 100%;
 		padding: 40px;
+		background-color: #EBEBEB;
 	}
 }
 
@@ -115,7 +116,6 @@
 	}
 }
 
-//! a revoir avec un SENSEI==========================
 .home__play {
 	display: flex; 
 	justify-content: center;
@@ -130,7 +130,6 @@
 	padding: 7.5px 7.5px 7.5px 17.5px;
 	max-width: 230px;
 	margin: auto;
-	//! a revoir avec un SENSEI========================
 	
 
 	& p {

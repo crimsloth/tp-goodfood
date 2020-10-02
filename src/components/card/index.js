@@ -21,8 +21,10 @@ import "./index.scss"
 // 		height: 328,
 // 	},
 // });
-//TODO: Mettre mes propres valeurs css.
+//*backup
 //-------------------------------------
+
+//TODO: gerer la hauteur des box du carousel, voir le content avec title (min-height?)
 
 
 export default function MediaCard(props) {
@@ -45,10 +47,10 @@ export default function MediaCard(props) {
 					image={image}
 					title={title}
 					type={type}
-				/> {/* IMAGE */}
+				/> 
 				<CardContent>
-					<Typography gutterBottom variant="h5" component="h2">{title}</Typography> {/* TITLE */}
-					<Typography variant="body2" color="textSecondary" component="p"> {content} </Typography> {/* CONTENT */}
+					<Typography className="card__title" gutterBottom variant="h5" component="h3">{title}</Typography> {/* TITLE */}
+					<Typography className="card__content" variant="body2" color="textSecondary" component="p"> {content} </Typography> {/* CONTENT */}
 				</CardContent>
 			</CardActionArea>
 			<CardActions>
