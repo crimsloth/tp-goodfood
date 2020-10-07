@@ -71,6 +71,10 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 // TODO: Ajuster le weight dans tout le site en utilisant la manière expliqué en demo
 
+// TODO: Ahouter les button souoer et dejeuner au carousel et faire le state
+
+// TODO: gérer le carousel pour ajouter celui du component Membre
+
 //! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
 
 // TODO: Setup le langue component sur le site (3 spots) avec les medias
