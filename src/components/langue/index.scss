@@ -1,12 +1,15 @@
 .langue {
-	width: 160px; // pas mettre de fixe
-	display: flex;
-	justify-content: space-between;
-	padding: 0 15px;
-	color: white;
-	letter-spacing: .2em;
-	align-items: center;
-	text-decoration: none;
+
+	position: absolute;
+	top: 3px;
+    right: 0;
+
+	&__box {
+		display: flex;
+		padding: 0 15px;
+		color: white;
+		letter-spacing: .2em;
+	}
 
 	&__fr {
 		margin: 0;

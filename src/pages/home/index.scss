@@ -21,23 +21,24 @@
 		margin: auto;
 		padding: 25px;
 		text-align: center;
-		max-width: 35%;
+		max-width: 40%;
 	}
 	&__slider-content h1, &__slider-content h3 {
-		font-family: 'Work Sans';
+		font-family: "Work Sans, Medium";
 		color: white;
 		margin-top: 20px;
 		margin-bottom: 10px;
 		text-shadow: 1px 1px 1px #969696;
 	}
 
-	&__slider-content h1 {
-		font-size: 3.7em;
-		font-weight: 700;
+	&__slider-content h1 { 
+		font-family: 'Work Sans, Bold';
+		font-size: 2.75em; //? pas capable d'avoir 44.4px
 	}
 	&__slider-content h3 {
 		font-size: 20px;
 		font-weight: 500;
+		padding-bottom: 12px;
 	}
 	
 
@@ -98,7 +99,7 @@
 }
 
 .debuter {
-	font-family: Work Sans,sans-serif;
+	font-family: "Work Sans";
 	background: #ee8659;
 	display: block;
 	font-weight: 600;
@@ -118,27 +119,30 @@
 
 .home__play {
 	display: flex; 
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	background: transparent;
 	border-radius: 10px;
 	color: #0b4652;
-	font-family: Salvo Sans,sans-serif;
+	font-family: "Salvo Sans";
 	font-weight: 700;
 	font-size: 18px;
 	border: 2px solid #0b4652;
 	padding: 7.5px 7.5px 7.5px 17.5px;
 	max-width: 230px;
 	margin: auto;
-	
 
-	& p {
-		margin: 0;
+	&:hover { //! svg en white?
+		background-color: #0b4652;
 	}
 
-	& img {
-		margin-top: -3px;
-		margin-bottom: -3px;
+	& span {
+		padding-top: 3px;
+	}
+	
+	& svg {
+		margin-top: -6px;
+		margin-bottom: -6px;
 		transition: all .5s ease-in-out;
 		transform: scale(.7);
 	}

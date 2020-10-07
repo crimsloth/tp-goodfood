@@ -2,7 +2,6 @@
 	background-color: #70cacb;
 	padding-top: 30px;
 	padding-bottom: 50px;
-	padding: 0 15px;
 	
 	&__box {
 		display: flex;
@@ -15,6 +14,7 @@
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	&__list h5 {
@@ -61,7 +61,7 @@
 	&__contact p {
 		color: #fff;
 		font-family: Harriet Text,sans-serif;
-		font-size: 2em;
+		font-size: 1.65rem;
 		margin: 0 0 10px;
 		// TODO: importer Harriet
 	}

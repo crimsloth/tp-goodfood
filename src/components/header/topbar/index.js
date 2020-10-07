@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-// import Langue from "../../langue" //! Mentors
+import Langue from "../../langue"
 
 // Style
 import "./index.scss"
@@ -14,14 +14,18 @@ function TopBar() {
 					<Link className="topBar__note" to="/pdg">Lire la note</Link>
 				</div>
 			</div>
-			{/* <Langue /> */}
-			<div className="topBar__langue">
-				<Link className="topBar__francais" to="/francais">Français</Link>
-				<p className="topBar__slash">/</p>
-				<Link className="topBar__english" to="/english">English</Link>
-			</div>
+			<Langue />
         </div>
     )
 }
+
+
+
+
+{/* <div className="topBar__langue">
+	<Link className="topBar__francais" to="/francais">Français</Link>
+	<p className="topBar__slash">/</p>
+	<Link className="topBar__english" to="/english">English</Link>
+</div> */}
 
 export default TopBar

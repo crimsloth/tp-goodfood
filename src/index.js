@@ -66,15 +66,15 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //! ----------------------------------------------------|  GLOBAL  |----------------------------------------------------
 
 // TODO: Importer les typos (salvo, work, harriet, etc.) dans le font.scss
-//* face-font avec css et parametrer les fonts. (done)
-//! faire certain que toutes les fonts sont là et opérationnel 
+//! Harriet Text est payante
+//? Trouver font gratuite pour Harriet ou laisser faire
 
 // TODO: Ajuster le weight dans tout le site en utilisant la manière expliqué en demo
 
 //! ----------------------------------------------------|  NAVBAR  |----------------------------------------------------
 
-// TODO: Setup le langue component sur le site (3 spots)
-//* avec les medias
+// TODO: Setup le langue component sur le site (3 spots) avec les medias
+//? revoir alignement top avec Mentors
 
 // TODO: Faire les hover pour le navbar (ligne dynamique en dessous)
 //? Voir Mentors
@@ -88,7 +88,9 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 //* le X va etre un button avec un onClick qui trigger un state qui display non le Offer (faire en class)
 
 // TODO: Gerer le min-height du carousel (voir fichier)
-//! rendu là (1er octobre 2020)
+//! reste à fix ceux qui sont pas égaux
+
+// TODO: fix le svg du CCM play button pour turn white quand on hover + animation
 
 //! ----------------------------------------------------|  FOOTER  |----------------------------------------------------
 

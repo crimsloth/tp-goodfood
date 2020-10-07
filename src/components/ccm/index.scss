@@ -10,11 +10,15 @@
 			color: #0b4652;
 			font-size: 30px;
 			font-weight: 800;
-			font-family: Salvo Sans Black,sans-serif;
+			font-family: "Salvo Sans, Black";
 			letter-spacing: .5px;
 			margin-top: 20px;
 			margin-bottom: 10px;
 		}
+	}
+
+	&__box {
+		padding: 0 25px;
 	}
 
 	&__fiches {
@@ -23,7 +27,7 @@
 		padding-left: 15px;
 
 		& img {
-			max-width: 88%;
+			max-width: 95%;
 			border-radius: 50%;
 			padding: 20px;
 			vertical-align: middle;
@@ -31,7 +35,7 @@
 		}
 
 		& h4 {
-			font-family: Salvo Sans Black,sans-serif;
+			font-family: 'Salvo Sans, Black';
 			color: #0b4652;
 			font-size: 18px;
 			margin: 10px 0;

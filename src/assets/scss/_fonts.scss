@@ -7,19 +7,24 @@
 }
 
 @font-face {
-	font-family: 'Work Sans';
+	font-family: 'Work Sans, Medium';
+	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Work Sans, Italic';
 	font-style: italic;
 	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Italic.ttf);
 }
 
 @font-face {
-	font-family: 'Work Sans';
+	font-family: 'Work Sans, Bold';
 	font-weight: bold;
 	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Bold.ttf);
 }
 
 @font-face {
-	font-family: 'Work Sans';
+	font-family: 'Work Sans, Black';
 	font-weight: 700;
 	src: local('Work Sans'), url(../fonts/Work_Sans/static/WorkSans-Black.ttf);
 } //TODO: a verifier selon le style
@@ -33,18 +38,20 @@
 }
 
 @font-face {
-	font-family: 'Salvo Sans';
-	font-weight: 300;
+	font-family: 'Salvo Sans, Light';
 	src: local('Salvo Sans'), url(../fonts/SalvoSansLight.woff);
 }
 
 @font-face {
-	font-family: 'Salvo Sans';
-	font-weight: 700;
+	font-family: 'Salvo Sans, Black';
 	src: local('Salvo Sans'), url(../fonts/SalvoSansBlack.woff);
 }
 
 
-//* ========================================| Autre |========================================
+//* =======================================| Harriet Text |=======================================
+
+//! PAID LICENSE
+
+//* ========================================|   Autre    |========================================
 
 

@@ -7,11 +7,13 @@ function CcmFiche(props) {
 			<div className="ccm__fiche-image">
 				<img src={props.image} alt={props.alt}></img>
 			</div>
-			<div className="ccm__fiche-title">
-				<h4>{props.title}</h4>
-			</div>
-			<div className="ccm__fiche-content">
-				{props.children}
+			<div className="ccm__box">
+				<div className="ccm__fiche-title">
+					<h4>{props.title}</h4>
+				</div>
+				<div className="ccm__fiche-content">
+					{props.children}
+				</div>
 			</div>
 		</div>
 	)

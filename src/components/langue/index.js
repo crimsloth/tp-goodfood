@@ -18,8 +18,8 @@ function Langue () {
 	
 	
 	return (
-		<div>
-            <nav className="langue">
+		<div className="langue">
+            <nav className="langue__box">
 				<Link className="langue__fr" to="/fr">Français</Link>
 				<p className="langue__slash">/</p>
 				<Link className="langue__en" to="/en">English</Link>
