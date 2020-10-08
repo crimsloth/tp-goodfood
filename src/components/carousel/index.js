@@ -59,7 +59,7 @@ export default class CustomArrows extends Component {
 						return <Card {...soup} type="souper" />
 					})}
 				</Slider>
-			</div> // ma des dejeuners et soupers
+			</div> // map des dejeuners et soupers
 		); 
 	}
 }

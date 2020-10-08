@@ -1,0 +1,36 @@
+.engageContent {
+
+	&__title {
+		&:before{
+			content: " - ";
+		}
+
+		&:after{
+			content: " - ";
+		}
+	}
+
+	&__link {
+		color: white;
+	}
+}
+
+.engagement {
+	color: white;
+	text-align: center;
+
+	&__top {
+		background: #4cc3c7;
+		padding: 25px 0;
+	}
+
+	&__bottom {
+		background: #0b4652;
+		padding: 25px 0;
+	}
+
+	&__title {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+}

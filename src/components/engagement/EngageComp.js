@@ -5,9 +5,9 @@ import "./index.scss"
 function EngageComp (props) {
   return (
     <div className="engageContent">
-      <h4>{props.title}</h4>
-      <p>{props.children}</p>
-      <Link>{props.link}</Link>
+      <h4 className="engageContent__title">{props.title}</h4>
+      <p>{props.text}</p>
+      <Link className="engageContent__link" to="/">En savoir plus</Link>
     </div>
   )
 }

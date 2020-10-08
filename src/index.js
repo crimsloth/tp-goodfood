@@ -57,7 +57,7 @@ ReactDOM.render(<Router><App /></Router>, document.getElementById("root"))
 
 
 
-
+//? notes: avait skip le carousel de membre, fait le squelette de engagement.
 
 
 

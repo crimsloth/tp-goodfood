@@ -19,13 +19,4 @@ function TopBar() {
     )
 }
 
-
-
-
-{/* <div className="topBar__langue">
-	<Link className="topBar__francais" to="/francais">Français</Link>
-	<p className="topBar__slash">/</p>
-	<Link className="topBar__english" to="/english">English</Link>
-</div> */}
-
 export default TopBar

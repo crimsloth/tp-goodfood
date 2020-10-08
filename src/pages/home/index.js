@@ -16,6 +16,8 @@ import Slider4 from "../../assets/img/slider-section/slider-dinner-layer-4.png"
 
 //Style
 import "./index.scss"
+import Membre from "../../components/membre/index"
+import Engagement from "../../components/engagement"
 
 
 function Home() {
@@ -66,6 +68,11 @@ function Home() {
 				</Ccm>
 				<div className="home__carousel">
 					<Carousel />
+				</div>
+				<div className="home__membre">
+					<Membre />
+					<Engagement />
+
 				</div>
 			</div>
 		</div>
