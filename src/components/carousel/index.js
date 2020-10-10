@@ -39,6 +39,12 @@ function SamplePrevArrow(props) {
 //* -----------------------------------------------------------
 
 export default class CustomArrows extends Component {
+
+	componentDidMount(){
+		// TODO: Chercher l'informations des lists ("uplift")
+		console.log("WHATS UP OLI");
+	}
+
 	render() {
 		const settings = {
 			dots: false,

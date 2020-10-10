@@ -19,6 +19,7 @@ import "./index.scss"
 import Membre from "../../components/membre/index"
 import Engagement from "../../components/engagement"
 
+import Example from "./example.js"
 
 function Home() {
 
@@ -72,7 +73,7 @@ function Home() {
 				<div className="home__membre">
 					<Membre />
 					<Engagement />
-
+					<Example />
 				</div>
 			</div>
 		</div>
