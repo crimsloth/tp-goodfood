@@ -2,11 +2,17 @@ import React from "react"
 import "./index.scss"
 import EngageComp from "./EngageComp"
 
+// images
+import layerLeft from "../../assets/img/about-us/layers-left.png"
+import layerRight from "../../assets/img/about-us/layers-right.png"
+
 function Engagement () {
 
 	return (
 
 		<div className="engagement">
+			<img className="engagement__layerLeft" src={layerLeft} alt="Layer Left" />
+			<img className="engagement__layerRight" src={layerRight} alt="Layer Right" />
 			<div className="engagement__top">
 				<h2 className="engagement__title">Nos engagements</h2>
 				<EngageComp

@@ -18,6 +18,19 @@
 .engagement {
 	color: white;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+
+	&__layerLeft {
+		position: absolute;
+		left: -50px;
+		width: 15%;
+	}
+	&__layerRight {
+		position: absolute;
+		right: -50px;
+		width: 15%;
+	}
 
 	&__top {
 		background: #4cc3c7;

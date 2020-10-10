@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import React, { Component }  from "react"
 import "./index.scss"
 import Slider from "react-slick";
