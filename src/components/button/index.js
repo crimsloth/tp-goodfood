@@ -15,7 +15,7 @@ function Button(props) {
 
 	style += " " + props.className
 	return (
-		<Link className={style + " link-button"} to={props.to}>
+		<Link onClick={props.onClick} className={style + " link-button"} to={props.to}>
 			{props.children}
 		</Link>
 	)

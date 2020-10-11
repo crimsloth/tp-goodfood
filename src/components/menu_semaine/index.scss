@@ -1,0 +1,44 @@
+.menuSemaine {
+
+	&__header {
+		text-align: center;
+	}
+
+	&__title {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+    color: #0b4652;
+    font-size: 1.9rem;
+    font-family: "Salvo Sans, Black";
+    letter-spacing: .5px;
+	}
+
+	&__buttons {
+		margin: 25px auto;
+	}
+
+	&__buttons-spec {
+		font-family: "Salvo Sans";
+    font-size: 1.3rem;
+		font-weight: 500;
+		margin: 0 10px;
+		min-width: 160px;
+		border-radius: 7px;
+		border: 2px solid #0b4652;
+		padding: 15px 20px; //! voir padding de type de original
+		&:hover {
+			background-color: #0b4652;
+			color: white;
+		}
+	}
+	
+	&__buttons-plein {
+		background: #0b4652;
+		color: #fff;
+	}
+
+	&__buttons-vide {
+		color: #0b4652;
+	}
+}

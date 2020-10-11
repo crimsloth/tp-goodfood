@@ -38,12 +38,7 @@ function SamplePrevArrow(props) {
 }
 //* -----------------------------------------------------------
 
-export default class CustomArrows extends Component {
-
-	componentDidMount(){
-		// TODO: Chercher l'informations des lists ("uplift")
-		console.log("WHATS UP OLI");
-	}
+export default class Carousel extends Component {
 
 	render() {
 		const settings = {
@@ -55,17 +50,19 @@ export default class CustomArrows extends Component {
 			prevArrow: <SamplePrevArrow />
 		}; //TODO: modifier les sampleArrow avec mes images
 
+		let items = [];
+			
+		if (this.props["type"] === "souper") items = souper
+		if (this.props["type"] === "dejeuner") items = dejeuner
+		
+		// console.log(this.props["type"])
+
 		return (
 			<div className="carousel">
-				<Slider className="carousel__content" {...settings}>
-					{dejeuner.map(dej => {
-						return <Card {...dej} type="dejeuner" />
-					})}
-					{souper.map(soup => {
-						return <Card {...soup} type="souper" />
-					})}
+				<Slider className="carousel__content" {...settings}> 
+					{items.map(item => {return <Card {...item} type={this.props["type"]} />})}
 				</Slider>
-			</div> // map des dejeuners et soupers
+			</div>
 		); 
 	}
 }

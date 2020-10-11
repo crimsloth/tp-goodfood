@@ -7,10 +7,17 @@
 	}
 
 	&__title {
-		font-size: 18px;
+		font-size: 1.1rem!important;
+		font-family: "Salvo Sans, Light"!important;
+		color: #0b4652;
+    font-weight: 700!important;
 	}
 
 	&__content {
 		min-height: 40px;
+		font-size: 0.8rem!important;
+		font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+
+
 	}
 }

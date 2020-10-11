@@ -18,8 +18,8 @@ router.get('/', function(req, res, next) {
   // TODO: return a list of all recettes depending on the params "type"
   const ans = {}
   const type = req.query.type;
-  console.log(type)
-  
+	console.log(type)
+	
   res.send(recettes);
 });
 

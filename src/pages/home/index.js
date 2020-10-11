@@ -1,5 +1,4 @@
 import React from "react"
-import Carousel from "../../components/carousel"
 import Button from "../../components/button"
 import CcmFiche from "../../components/ccm/fiche"
 import Ccm from "../../components/ccm"
@@ -20,6 +19,7 @@ import Membre from "../../components/membre/index"
 import Engagement from "../../components/engagement"
 
 import Example from "./example.js"
+import MenuSemaine from "../../components/menu_semaine"
 
 function Home() {
 
@@ -67,14 +67,10 @@ function Home() {
 						<p>Nos recettes sont conçues pour tous les niveaux et styles culinaires : que ce soit un déjeuner prêt en 1 minute ou un délicieux souper fait maison.</p>
 					</CcmFiche>
 				</Ccm>
-				<div className="home__carousel">
-					<Carousel />
-				</div>
-				<div className="home__membre">
-					<Membre />
-					<Engagement />
-					<Example />
-				</div>
+
+				<MenuSemaine />
+				<Membre />
+				<Engagement />		
 			</div>
 		</div>
 	)
