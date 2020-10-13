@@ -1,5 +1,7 @@
 .home {
 
+	transition: all .5s ease-in-out;
+
 	&__slider {
 		width: 100%;
 		height: 100%;
@@ -47,13 +49,13 @@
 		text-align: center;
 	}
 
-	&__comment-title {
-		text-transform: uppercase;
-		color: #0b4652;
-		font-size: 3rem;
-		font-family: Salvo Sans Black,sans-serif;
-		letter-spacing: .5px;
-	}
+	// &__comment-title {
+	// 	text-transform: uppercase;
+	// 	color: #0b4652;
+	// 	font-size: 3rem;
+	// 	font-family: Salvo Sans Black,sans-serif;
+	// 	letter-spacing: .5px;
+	// }
 
 	&__slider-img1 {
 		width: 273px;

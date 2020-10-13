@@ -1,0 +1,56 @@
+{
+  "id": 2,
+  "type": "dejeuner",
+  "title": "Croquant Arabica",
+  "content": "Évoque le goût d’un latté glacé au mocha.",
+  // image: CroquantArabica
+},
+{
+  "id": 3,
+  "type": "dejeuner",
+  "title": "Baies boréales",
+  "content": "Évoque le goût d’un sorbet arboré aux baies sauvages.",
+  // image: BaiesBoreales
+},
+{
+  "id": 4,
+  "type": "dejeuner",
+  "title": "Mélange amazonien (en grains)",
+  "content": "Café 100% Arabica - 340g",
+  // image: MelangeAmazonien
+},
+{
+  "id": 5,
+  "type": "dejeuner",
+  "title": "Croissants au beurre",
+  "content": "4 croissants prêts-à-cuire",
+  // image: CroissantsBeurre
+},
+{
+  "id": 6,
+  "type": "dejeuner",
+  "title": "Fraises banane",
+  "content": "Nouvelle recette !",
+  // image: FraisesBanane
+},
+{
+  "id": 7,
+  "type": "dejeuner",
+  "title": "Pâte à pancake traditionnel",
+  "content": "Pâte de pancakes prêts-à-cuire",
+  // image: PatePancake
+},
+{
+  "id": 8,
+  "type": "dejeuner",
+  "title": "Quiche au cheddar et aux oignons",
+  "content": "avec pâte brisée au beurre (600 g - 4 portions)",
+  // image: QuicheCheddar
+},
+{
+  "id": 9,
+  "type": "dejeuner",
+  "title": "Tartine aux fruits rouges",
+  "content": "",
+  // image: TartineFruits
+}W

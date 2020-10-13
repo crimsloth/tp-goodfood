@@ -18,7 +18,7 @@ import "./index.scss"
 import Membre from "../../components/membre/index"
 import Engagement from "../../components/engagement"
 
-import Example from "./example.js"
+// component
 import MenuSemaine from "../../components/menu_semaine"
 
 function Home() {

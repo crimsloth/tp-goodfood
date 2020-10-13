@@ -1,12 +1,12 @@
 import React from "react"
-import memberList from "../../assets/list/member"
+import MemberList from "../../assets/list/member"
 import "./index.scss"
 
 
 function MemberCard (props) {
 
 	return (
-		<memberList></memberList>
+		<MemberList></MemberList>
 	)
 }
 
