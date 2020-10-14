@@ -1,40 +1,40 @@
 var express = require('express');
 var router = express.Router();
 
-var dejeuner = require('./list/dejeuner.json');
-// var souper = require('./souper');
+var recettes = require('./recettes.json');
 
 /* GET home page. */
 
 
-router.get('/', function(req, res, next) {
-  // TODO: return a list of all recettes depending on the params "type"
+router.get('/', function(req, res) {
   const ans = {}
   const type = req.query.type;
-  console.log(dejeuner);
+  console.log(recettes);
   
-  res.send(dejeuner);
-  // res.send('The type is ' + req.params.type);
+  res.send(recettes);
 });
 
-//! faire les filters
+//! comment afficher toute les types disponibles dans le array? {dejeuner, souper}
+// router.get('/type', function(req, res) {
+//   const ans = {} //! sert a quoi?
+//   const type = recettes.reduce( type => )
+//   console.log(type);
+  
+//   res.send(recettes);
+// });
 
-// /recettes/type/souper
 router.get('/type/:type', (req, res) => {
-  // 'req' means request
-  // TODO: return all recettes of type "req.params.type"
-  const type = req.params.type;
-
-  // 'res' means response
-  res.send("Le type recu est: " + type);
+	const type = req.params.type;
+	const menuSemaine = recettes.filter(menu => menu.type == type);
+	console.log(menuSemaine);
+  res.send("Les recettes du type " + type + " sont: " + menuSemaine);
 });
 
-// /recettes/42
 router.get('/:id', (req, res) => {
-    // TODO: return a single recette with id "req.params.id"
-    const id = req.params.id;
+		const id = req.params.id;
+		const identifiant = recettes.filter(menu => menu.id == id)
 
-    res.send('olilo');
+    res.send("La recette numero " + id + " est:" + identifiant);
   });
 
 module.exports = router;

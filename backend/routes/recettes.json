@@ -1,0 +1,128 @@
+[
+	{
+		"id": 1,
+		"type": "dejeuner",
+		"title": "Macadamia Sunrise",
+		"content": "Évoque le goût d’un soda mousse à la cerise avec un soupçon de noix de coco.",
+		"image": "macadamia-sunrise.jpg"
+	},
+	{
+		"id": 2,
+		"type": "dejeuner",
+		"title": "Croquant Arabica",
+		"content": "Évoque le goût d’un latté glacé au mocha.",
+		"image": "arabica-crisp.jpg"
+	},
+	{
+		"id": 3,
+		"type": "dejeuner",
+		"title": "Baies boréales",
+		"content": "Évoque le goût d’un sorbet arboré aux baies sauvages.",
+		"image": "boreal-berry.jpg"
+	},
+	{
+		"id": 4,
+		"type": "dejeuner",
+		"title": "Mélange amazonien (en grains)",
+		"content": "Café 100% Arabica - 340g",
+		"image": "amazon-blend-whole-beans.jpg"
+	},
+	{
+		"id": 5,
+		"type": "dejeuner",
+		"title": "Croissants au beurre",
+		"content": "4 croissants prêts-à-cuire",
+		"image": "butter-croissants.jpg"
+	},
+	{
+		"id": 6,
+		"type": "dejeuner",
+		"title": "Fraises banane",
+		"content": "Nouvelle recette !",
+		"image": "strawberry-banana.jpg"
+	},
+	{
+		"id": 7,
+		"type": "dejeuner",
+		"title": "Pâte à pancake traditionnel",
+		"content": "Pâte de pancakes prêts-à-cuire",
+		"image": "homestyle-pancake-batter.jpg"
+	},
+	{
+		"id": 8,
+		"type": "dejeuner",
+		"title": "Quiche au cheddar et aux oignons",
+		"content": "avec pâte brisée au beurre (600 g - 4 portions)",
+		"image": "butter-crusted-cheddar-quiche.jpg"
+	},
+	{
+		"id": 9,
+		"type": "dejeuner",
+		"title": "Tartine aux fruits rouges",
+		"content": "",
+		"image": "sweet-cherry-peanut.jpg"
+	},
+	{
+		"id": 10,
+		"type": "souper",
+		"title": "Boulettes de poulet et de basilic",
+		"content": "avec orzo aux tomates et salade verte",
+		"image": "chicken-basil-meatballs.jpg"
+	},
+	{
+		"id": 11,
+		"type": "souper",
+		"title": "Boulettes de viande BBQ avec légumes glacés au miel",
+		"content": "et pommes de terre rôties",
+		"image": "bbq-meatballs.jpg"
+	},
+	{
+		"id": 12,
+		"type": "souper",
+		"title": "Tortellinis au fromage poêlés et bruschetta",
+		"content": "avec haricots amandine et copeaux de parmesan",
+		"image": "cheese-tortellini-bruschetta.jpg"
+	},
+	{
+		"id": 13,
+		"type": "souper",
+		"title": "Bian dang de porc à la taïwanaise avec légumes feuillus asiatiques",
+		"content": "chou braisé et œufs marinés au soya",
+		"image": "bian-dang-asian-greens.jpg"
+	},
+	{
+		"id": 14,
+		"type": "souper",
+		"title": "Porc haché sauté sur riz au jasmin",
+		"content": "avec arachides grillées et concombres marinés rapidement",
+		"image": "ground-porkover-jasmine-rice.jpg"
+	},
+	{
+		"id": 15,
+		"type": "souper",
+		"title": "Morue aux tomates cuite au four",
+		"content": "avec pain au beurre à l’ail et bébé laitue",
+		"image": "tomato-baked-cod.jpg"
+	},
+	{
+		"id": 16,
+		"type": "souper",
+		"title": "Chana dal avec salsa à la coriandre",
+		"content": "riz assaisonné aux petits pois et haricots",
+		"image": "chana-dal-with-cilantro-salsa.jpg"
+	},
+	{
+		"id": 17,
+		"type": "souper",
+		"title": "Tacos au bœuf haché avec salsa verde maison",
+		"content": "salade de chou et fromage cotija",
+		"image": "ground-beef-tacos.jpg"
+	},
+	{
+		"id": 18,
+		"type": "souper",
+		"title": "Bols de champignons Shawarma",
+		"content": "avec sauce au yogourt à l’ail rôti",
+		"image": "mushroom-shawarma-bowls.jpg"
+	}
+]
