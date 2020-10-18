@@ -2,6 +2,8 @@
 import React, { Component }  from "react"
 import "./index.scss"
 import Slider from "react-slick";
+import memberList from "../../assets/list/member"
+import MemberCard from "./membreCard";
 
 
 // TODO: importer les svg des fleches et mettre un height au box comme sur le site
@@ -51,34 +53,9 @@ export default class Membre extends Component {
 					<div className="membre__left">
 						<div className="membre__moyenne"></div>
 					</div>
-					<div className="membre__carousel">
-						<Slider {...settings}> 
-							<div>
-								<h3>1</h3>
-							</div>
-							<div>
-								<h3>2</h3>
-							</div>
-							<div>
-								<h3>3</h3>
-							</div>
-							<div>
-								<h3>4</h3>
-							</div>
-							<div>
-								<h3>5</h3>
-							</div>
-							<div>
-								<h3>6</h3>
-							</div>
-							<div>
-								<h3>7</h3>
-							</div>
-							<div>
-								<h3>8</h3>
-							</div>
+						<Slider className="membre__carousel" {...settings}> 
+							{memberList.map(item => {return <MemberCard {...item} />})}
 						</Slider>
-					</div>
 				</div>
       </div>
     );

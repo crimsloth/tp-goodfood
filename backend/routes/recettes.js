@@ -7,34 +7,65 @@ var recettes = require('./recettes.json');
 
 
 router.get('/', function(req, res) {
-  const ans = {}
+  const answer = {}
   const type = req.query.type;
-  console.log(recettes);
-  
-  res.send(recettes);
-});
 
-//! comment afficher toute les types disponibles dans le array? {dejeuner, souper}
-// router.get('/type', function(req, res) {
-//   const ans = {} //! sert a quoi?
-//   const type = recettes.reduce( type => )
-//   console.log(type);
-  
-//   res.send(recettes);
-// });
+  if (type == null) {
+    answer.message = "Liste de toutes les recettes"
+    answer.data = recettes;
+  }
+  else if (type == undefined || type == "") {
+    const types = [];
+    recettes.forEach(recette => {
+      if(types.includes(recette.type)) return;
+      else types.push(recette.type)
+    })
+    answer.message = "Liste des types disponibles"
+    answer.data = types;
+  } 
+  else {
+    const menuSemaine = recettes.filter(menu => menu.type == type);
+    answer.message = `Liste avec type ${type}`
+    answer.data = menuSemaine;
+  }
 
-router.get('/type/:type', (req, res) => {
-	const type = req.params.type;
-	const menuSemaine = recettes.filter(menu => menu.type == type);
-	console.log(menuSemaine);
-  res.send("Les recettes du type " + type + " sont: " + menuSemaine);
+  res.send(answer)
+
 });
 
 router.get('/:id', (req, res) => {
+    const answer = {}
 		const id = req.params.id;
 		const identifiant = recettes.filter(menu => menu.id == id)
+    answer.data = identifiant
+    res.send(answer);
+});
 
-    res.send("La recette numero " + id + " est:" + identifiant);
-  });
+// TODO: ajouter une recette à la liste de recettes actives
+router.post('/', (req,res) => {
+  // req.body devrait contenir la nouvelle recette
+  console.log(req.body);
+
+  // on verifie que la recette dans body est bien defini
+
+  // et ensuite, on la rajoute a la liste de recette actif
+
+  res.send("do me oli")
+})
+
+
+// TODO: Supprimer la recette demandée par le id
+router.delete('/:id', (req,res) => {
+  //ID devrait etre le id de la recette quon veut suprimer 
+  const id = req.params.id;
+
+  // on s'assure que le ID est existant
+
+  // on supprime la recette de la liste
+
+  res.send("do me oli")
+})
+
+
 
 module.exports = router;

@@ -1,0 +1,11 @@
+{
+  "name": "temp",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}
